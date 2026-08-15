@@ -57,16 +57,6 @@ function HeroSlider() {
     return () => clearInterval(timer);
   }, []);
 
-  const nextSlide = () => {
-    setActive((prev) => (prev + 1) % SLIDES.length);
-  };
-
-  const previousSlide = () => {
-    setActive(
-      (prev) => (prev - 1 + SLIDES.length) % SLIDES.length
-    );
-  };
-
   return (
     <section className="relative h-[calc(100vh-80px)] min-h-[620px] w-full overflow-hidden bg-teal">
 
@@ -120,27 +110,11 @@ function HeroSlider() {
 
         <div className="max-w-3xl pt-10">
 
-          {/* EYEBROW */}
-
-          <div
-            key={`eyebrow-${active}`}
-            className="mb-7 inline-flex animate-[heroText_0.7s_ease-out] items-center gap-2 rounded-md bg-white px-3 py-2"
-          >
-
-            <span className="h-2 w-2 rounded-full bg-gold" />
-
-            <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-teal">
-              {SLIDES[active].eyebrow}
-            </span>
-
-          </div>
-
-
           {/* HEADING */}
 
           <h1
             key={`title-${active}`}
-            className="animate-[heroText_0.8s_ease-out] font-display text-5xl font-semibold uppercase leading-[0.92] tracking-[-0.025em] text-white sm:text-6xl md:text-7xl lg:text-[86px]"
+            className="animate-[heroText_0.8s_ease-out] font-display text-4xl font-normal uppercase leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl md:text-6xl lg:text-6xl"
           >
             {SLIDES[active].title}
           </h1>
@@ -150,7 +124,7 @@ function HeroSlider() {
 
           <p
             key={`description-${active}`}
-            className="mt-7 max-w-xl animate-[heroText_1s_ease-out] text-sm leading-7 text-white/80 md:text-base"
+            className="mt-5 max-w-xl animate-[heroText_1s_ease-out] text-sm leading-6 text-white/80 md:text-base"
           >
             {SLIDES[active].description}
           </p>
@@ -158,7 +132,7 @@ function HeroSlider() {
 
           {/* CTA */}
 
-          <div className="mt-9 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
 
             <Link
               to="/appointment"
@@ -182,67 +156,6 @@ function HeroSlider() {
 
 
       {/* =====================================================
-          PREVIOUS BUTTON
-      ===================================================== */}
-
-      <button
-        type="button"
-        onClick={previousSlide}
-        aria-label="Previous slide"
-        className="absolute left-5 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/10 text-4xl font-light text-white/80 backdrop-blur-sm transition duration-300 hover:border-white hover:bg-white hover:text-teal md:left-7"
-      >
-        ‹
-      </button>
-
-
-      {/* =====================================================
-          NEXT BUTTON
-      ===================================================== */}
-
-      <button
-        type="button"
-        onClick={nextSlide}
-        aria-label="Next slide"
-        className="absolute right-5 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full border border-white/30 bg-black/10 text-4xl font-light text-white/80 backdrop-blur-sm transition duration-300 hover:border-white hover:bg-white hover:text-teal md:right-7"
-      >
-        ›
-      </button>
-
-
-      {/* =====================================================
-          SLIDE INDICATOR
-      ===================================================== */}
-
-      <div className="absolute bottom-8 left-6 z-20 flex items-center gap-3 md:left-10 lg:left-12">
-
-        {SLIDES.map((slide, index) => (
-          <button
-            key={slide.image}
-            type="button"
-            onClick={() => setActive(index)}
-            aria-label={`Go to slide ${index + 1}`}
-            className="group flex items-center gap-2"
-          >
-
-            <span
-              className={`h-[2px] transition-all duration-500 ${
-                active === index
-                  ? "w-12 bg-gold"
-                  : "w-6 bg-white/40"
-              }`}
-            />
-
-            <span className="text-[9px] font-bold text-white/60">
-              0{index + 1}
-            </span>
-
-          </button>
-        ))}
-
-      </div>
-
-
-      {/* =====================================================
           SPECIALTIES
       ===================================================== */}
 
@@ -257,19 +170,6 @@ function HeroSlider() {
         <span className="h-1 w-1 rounded-full bg-gold" />
 
         <span>Spine Care</span>
-
-      </div>
-
-
-      {/* =====================================================
-          SLIDE NUMBER
-      ===================================================== */}
-
-      <div className="absolute right-6 top-1/2 z-20 hidden -translate-y-1/2 rotate-90 lg:block">
-
-        <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-white/40">
-          0{active + 1} / 03
-        </span>
 
       </div>
 
