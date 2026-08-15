@@ -34,7 +34,7 @@ const TEAM = [
     role: "Physiotherapy Lead",
     specialty: "Rehabilitation · Movement Therapy",
     image:
-      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=85",
+      "https://i.pinimg.com/736x/47/a4/44/47a4448f2df0046ee1f7bed28f87e551.jpg",
   },
 ];
 

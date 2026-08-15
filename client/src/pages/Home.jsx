@@ -157,7 +157,7 @@ const BLOGS = [
     title: "Recovery After Joint Surgery",
     category: "Recovery",
     image:
-      "https://i.pinimg.com/736x/52/a4/2f/52a42f2df1a674b45893fc8b009110ee.jpg",
+      "https://i.pinimg.com/1200x/c2/b7/e1/c2b7e1d44283180988d6f97966333212.jpg",
     slug: "recovery-after-joint-surgery",
   },
 ];
