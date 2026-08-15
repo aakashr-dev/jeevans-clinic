@@ -38,7 +38,7 @@ function PageHero({
 
         {/* IMAGE */}
 
-        <div className="overflow-hidden rounded-[32px]">
+        <div className="overflow-hidden rounded-xl">
 
           <img
             src={image}

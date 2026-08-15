@@ -277,7 +277,7 @@ function Centers() {
                 className="
                   group
                   overflow-hidden
-                  rounded-2xl
+                  rounded-xl
                   border
                   border-[#E8E5DF]
                   bg-white

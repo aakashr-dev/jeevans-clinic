@@ -137,7 +137,7 @@ function Navbar() {
           duration-500
           ${
             isTransparent
-              ? "bg-transparent border-b border-white/15 py-4 md:py-5"
+              ? "bg-transparent border-b border-transparent py-4 md:py-5"
               : "border-b border-black/[0.05] bg-white/95 backdrop-blur-xl py-3 md:py-3.5 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
           }
         `}

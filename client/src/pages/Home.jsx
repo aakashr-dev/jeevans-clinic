@@ -237,7 +237,7 @@ function Home() {
 
           <div className="relative">
 
-            <div className="overflow-hidden rounded-[32px]">
+            <div className="overflow-hidden rounded-xl">
 
               <img
                 src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1200&q=85"
@@ -247,7 +247,7 @@ function Home() {
 
             </div>
 
-            <div className="absolute -bottom-7 right-5 rounded-[22px] bg-teal px-7 py-6 shadow-xl md:right-8">
+            <div className="absolute -bottom-7 right-5 rounded-lg bg-teal px-7 py-6 shadow-xl md:right-8">
 
               <p className="font-display text-4xl text-gold">
                 15+
@@ -401,7 +401,7 @@ function Home() {
               <Link
                 key={condition.title}
                 to={condition.path}
-                className="group relative overflow-hidden rounded-[28px] bg-teal"
+                className="group relative overflow-hidden rounded-xl bg-teal"
               >
 
                 <div className="aspect-[4/4.5] overflow-hidden">
@@ -490,12 +490,12 @@ function Home() {
 
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
 
               {JOURNEY.map((item) => (
                 <div
                   key={item.number}
-                  className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:border-gold/40 hover:bg-white/[0.06]"
+                  className="group relative rounded-xl border border-[rgba(220,230,225,0.14)] bg-[#163F3C] p-8 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[rgba(212,165,90,0.35)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)] lg:p-9"
                 >
 
                   <span className="text-xs font-bold tracking-[0.2em] text-gold">
@@ -549,7 +549,7 @@ function Home() {
             {EXPERTISE.map((item) => (
               <article
                 key={item.number}
-                className="rounded-[26px] border border-gray-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="rounded-xl border border-gray-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
               >
 
                 <span className="text-xs font-bold tracking-[0.2em] text-gold">
@@ -582,7 +582,7 @@ function Home() {
 
         <div className="container-custom grid items-center gap-14 lg:grid-cols-2">
 
-          <div className="overflow-hidden rounded-[32px]">
+          <div className="overflow-hidden rounded-xl">
 
             <img
               src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=85"
@@ -810,7 +810,7 @@ function Home() {
 
       <section className="px-6 pb-20 md:px-10 md:pb-28 lg:px-12">
 
-        <div className="mx-auto max-w-[1400px] overflow-hidden rounded-[34px] bg-[#F6F3EE] px-7 py-16 text-center md:px-16 md:py-20">
+        <div className="mx-auto max-w-[1400px] overflow-hidden rounded-2xl bg-[#F6F3EE] px-7 py-16 text-center md:px-16 md:py-20">
 
           <p className="eyebrow justify-center">
             Start Your Recovery
