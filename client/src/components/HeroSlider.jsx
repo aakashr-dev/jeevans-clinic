@@ -6,7 +6,7 @@ const SLIDES = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgOj5-hiWGahN6dUon1EyULmUUuBNlj7DYgErYsuuCaQ&s=10",
     eyebrow: "Advanced Orthopedic Care",
-    line1: "MOVE BETTER.",
+    line1: "MOVE BETTER",
     line2: "LIVE STRONGER.",
     description:
       "Advanced orthopedic, sports medicine and regenerative care designed around your movement, recovery and goals.",
@@ -61,16 +61,14 @@ function HeroSlider() {
       {SLIDES.map((slide, index) => (
         <div
           key={slide.image}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            active === index ? "opacity-100" : "opacity-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ${active === index ? "opacity-100" : "opacity-0"
+            }`}
         >
           <img
             src={slide.image}
             alt=""
-            className={`h-full w-full object-cover transition-transform duration-[7000ms] ${
-              active === index ? "scale-105" : "scale-100"
-            }`}
+            className={`h-full w-full object-cover transition-transform duration-[7000ms] ${active === index ? "scale-105" : "scale-100"
+              }`}
           />
         </div>
       ))}
@@ -168,11 +166,10 @@ function HeroSlider() {
             className="group p-1.5 focus:outline-none"
           >
             <span
-              className={`block h-1.5 rounded-full transition-all duration-500 ${
-                active === index
+              className={`block h-1.5 rounded-full transition-all duration-500 ${active === index
                   ? "w-8 bg-gold"
                   : "w-2.5 bg-white/40 group-hover:bg-white/70"
-              }`}
+                }`}
             />
           </button>
         ))}
