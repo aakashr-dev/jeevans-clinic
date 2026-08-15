@@ -138,8 +138,8 @@ function Navbar() {
           duration-500
           ${
             isScrolled
-              ? "py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
-              : "py-4"
+              ? "py-2 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
+              : "py-2.5"
           }
         `}
       >
@@ -220,7 +220,7 @@ function Navbar() {
                   flex
                   items-center
                   gap-1.5
-                  py-5
+                  py-2.5
                   text-[14px]
                   font-medium
                   transition-colors
@@ -331,7 +331,7 @@ function Navbar() {
                   flex
                   items-center
                   gap-1.5
-                  py-5
+                  py-2.5
                   text-[14px]
                   font-medium
                   transition-colors
@@ -449,7 +449,7 @@ function Navbar() {
                   flex
                   items-center
                   gap-1.5
-                  py-5
+                  py-2.5
                   text-[14px]
                   font-medium
                   transition-colors
