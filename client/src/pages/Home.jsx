@@ -452,61 +452,72 @@ function Home() {
 
       <section
         id="journey"
-        className="bg-teal"
+        className="bg-[#163F3C] text-[#AEBFBC]"
       >
 
-        <div className="container-custom py-20 md:py-28">
+        <div className="container-custom py-24 md:py-32">
 
-          <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="grid items-start gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
 
-            <div>
+            {/* LEFT EDITORIAL COLUMN */}
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">
-                Our Approach
+            <div className="max-w-[500px]">
+
+              <p className="text-[11px] font-semibold uppercase tracking-[2px] text-[#D4A55A]">
+                OUR APPROACH
               </p>
 
-              <h2 className="mt-5 font-display text-4xl leading-tight text-white md:text-6xl">
-                From understanding
-                <br />
-                your problem to
-                <br />
-                <span className="text-gold">
+              <h2 className="mt-6 font-display text-[42px] leading-[0.96] tracking-[-0.02em] text-[#F4F1E8] sm:text-[54px] md:text-[62px] lg:text-[68px]">
+                From understanding your problem to{" "}
+                <span className="text-[#D4A55A]">
                   restoring movement.
                 </span>
               </h2>
 
-              <p className="mt-7 max-w-xl text-base leading-8 text-white/60">
+              <p className="mt-8 max-w-[480px] font-sans text-base leading-relaxed text-[#AEBFBC]">
                 Every patient is different. Our approach combines
                 careful diagnosis, personalised treatment planning
                 and structured recovery support.
               </p>
 
-              <Link
-                to="/about/doctor"
-                className="mt-8 inline-flex text-xs font-bold uppercase tracking-[0.15em] text-white transition hover:text-gold"
-              >
-                Discover Our Approach →
-              </Link>
+              <div className="mt-10">
+
+                <Link
+                  to="/about/doctor"
+                  className="group inline-flex items-center gap-3 font-sans text-xs font-semibold uppercase tracking-[0.18em] text-[#D4A55A] transition-all duration-300 hover:text-[#F4F1E8]"
+                >
+                  <span>DISCOVER OUR APPROACH</span>
+
+                  <span className="transition-transform duration-300 group-hover:translate-x-1.5">
+                    →
+                  </span>
+                </Link>
+
+              </div>
 
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            {/* RIGHT EDITORIAL CARDS */}
+
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
 
               {JOURNEY.map((item) => (
                 <div
                   key={item.number}
-                  className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:border-gold/40 hover:bg-white/[0.06]"
+                  className="group relative rounded-[22px] border border-[rgba(220,230,225,0.14)] bg-[#163F3C] p-8 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[rgba(212,165,90,0.35)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)] lg:p-9"
                 >
 
-                  <span className="text-xs font-bold tracking-[0.2em] text-gold">
+                  <span className="font-sans text-xs font-medium tracking-[0.18em] text-[#D4A55A]">
                     {item.number}
                   </span>
 
-                  <h3 className="mt-7 font-display text-2xl text-white">
+                  <div className="my-5 h-[1px] w-full bg-[rgba(220,230,225,0.14)] transition-colors duration-500 group-hover:bg-[#D4A55A]/40" />
+
+                  <h3 className="font-display text-2xl font-normal text-[#F4F1E8] lg:text-3xl">
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 text-sm leading-7 text-white/50">
+                  <p className="mt-3 font-sans text-sm leading-relaxed text-[#AEBFBC]">
                     {item.text}
                   </p>
 
