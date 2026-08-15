@@ -3,22 +3,28 @@ import { Link } from "react-router-dom";
 
 const SLIDES = [
   {
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgOj5-hiWGahN6dUon1EyULmUUuBNlj7DYgErYsuuCaQ&s=10",
+    image: "/images/premium_photo-1663012948067-0478e4f9d9c6.avif",
+    eyebrow: "Advanced Orthopedic Care",
+    line1: "MOVE BETTER",
+    line2: "LIVE STRONGER.",
     title: "MOVE BETTER. LIVE STRONGER.",
     description:
       "Advanced orthopedic care and evidence-based physiotherapy tailored to restore your mobility, eliminate pain, and help you move stronger every day.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=2200&q=90",
+    image: "/images/premium_photo-1663100171531-b4dc3efebf6a.avif",
+    eyebrow: "Sports Medicine",
+    line1: "GET BACK TO",
+    line2: "WHAT MOVES YOU.",
     title: "GET BACK TO WHAT MOVES YOU.",
     description:
       "Targeted sports medicine, injury recovery, and active rehabilitation designed to get you back to peak performance safely.",
   },
   {
-    image:
-      "https://media.post.rvohealth.io/wp-content/uploads/2024/09/multiracial-group-practicing-yoga-in-studio-732x549-thumbnail.jpg",
+    image: "/images/premium_photo-1683133819121-2f2958d9da09.avif",
+    eyebrow: "Regenerative Care",
+    line1: "RECOVERY,",
+    line2: "REIMAGINED.",
     title: "RECOVERY, REIMAGINED.",
     description:
       "Modern regenerative therapies and holistic movement care dedicated to long-term joint health, strength, and active wellness.",
@@ -62,8 +68,8 @@ function HeroSlider() {
       {/* =====================================================
           BRAND & GRADIENT OVERLAYS
       ===================================================== */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(13,48,46,0.72)_0%,rgba(13,48,46,0.92)_100%)]" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50" />
+      <div className="absolute inset-0 bg-black/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0D302E]/75 via-[#0D302E]/25 to-black/40" />
 
       {/* =====================================================
           HERO CONTENT
