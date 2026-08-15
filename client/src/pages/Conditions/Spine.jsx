@@ -21,28 +21,28 @@ const CONDITIONS = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?auto=format&fit=crop&w=1000&q=85",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Lkgg186XS3197MqTy-tUI-uYXfDfB3uk4lCnbFcFhDlfxJuZnxe-OI-g&s=10",
     title: "Nerve Compression",
     description:
       "Assessment and treatment for compressed nerves that may cause radiating pain, tingling or numbness.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1000&q=85",
+      "https://www.mdbonedocs.com/wp-content/uploads/2025/08/spinal-stenosis-image-1.jpg.webp",
     title: "Spinal Stiffness",
     description:
       "Focused care for restricted spinal movement, stiffness and discomfort affecting daily activities.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=85",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSny0WhUXEV_RpPCwFfsRi6V1CSmiFCN51claWqJdJ8wAdPEOi714UkljI&s=10",
     title: "Spinal Arthritis",
     description:
       "Treatment focused on age-related changes affecting the spine, joints and surrounding structures.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1000&q=85",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvR6Kv20Vx32rIIzngxT2LKfuyWAnEtdbdIAdTRp4rllwTVgciyJjFBzo&s=10",
     title: "Postural Back Pain",
     description:
       "Care for discomfort associated with prolonged sitting, poor posture and lifestyle-related strain.",

@@ -9,7 +9,7 @@ const ARTICLES = [
     description:
       "Why joint pain happens, what symptoms to watch for and when professional orthopedic care may be helpful.",
     image:
-      "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/3b/66/2a/3b662ae4a43280da794f2b993ec4b81e.jpg",
   },
   {
     slug: "when-should-you-see-an-orthopedic-surgeon",
@@ -19,7 +19,7 @@ const ARTICLES = [
     description:
       "Understanding the signs that persistent pain, stiffness or movement problems may need specialist evaluation.",
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/c6/d9/e5/c6d9e56211e882c582785a5695dd7e3e.jpg",
   },
   {
     slug: "returning-to-an-active-lifestyle",
@@ -29,7 +29,7 @@ const ARTICLES = [
     description:
       "Practical guidance for getting back to movement safely after an injury or period of reduced activity.",
     image:
-      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/9a/94/76/9a9476984e2cfd1316e9ea154c1dd932.jpg",
   },
   {
     slug: "understanding-neck-pain",
@@ -39,7 +39,7 @@ const ARTICLES = [
     description:
       "Common causes of neck pain and the importance of understanding the underlying source of discomfort.",
     image:
-      "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/2d/91/74/2d9174a38f69cf32bda1858691aa940b.jpg",
   },
   {
     slug: "knee-pain-and-everyday-mobility",
@@ -49,7 +49,7 @@ const ARTICLES = [
     description:
       "How knee discomfort can affect daily movement and the different factors that may contribute to it.",
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/05/28/45/0528455c9feb4a5b2f64b135faf2bfef.jpg",
   },
   {
     slug: "sports-injury-recovery",
@@ -59,7 +59,7 @@ const ARTICLES = [
     description:
       "Understanding recovery, rehabilitation and the importance of returning to activity at the right pace.",
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/ba/ca/0b/baca0b8bb28abe475cd6a4b0eb525c20.jpg",
   },
 ];
 

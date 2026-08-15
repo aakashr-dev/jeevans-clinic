@@ -14,35 +14,35 @@ const CONDITIONS = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1000&q=85",
+      "https://i.pinimg.com/1200x/81/e4/48/81e448dfa06569393d657d77dc470c4a.jpg",
     title: "Plantar Fasciitis",
     description:
       "Focused care for heel and foot pain commonly associated with plantar fascia irritation.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?auto=format&fit=crop&w=1000&q=85",
+      "https://i.pinimg.com/1200x/83/df/fa/83dffaf2b829371bba96a1e0e0b1e81d.jpg",
     title: "Foot Injuries",
     description:
       "Assessment and treatment for injuries affecting the bones, joints, muscles and soft tissues of the foot.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?auto=format&fit=crop&w=1000&q=85",
+      "https://i.pinimg.com/1200x/d7/29/4c/d7294ceb31926d8e4413ee7f9bf4113d.jpg",
     title: "Heel Pain",
     description:
       "Treatment for persistent heel discomfort that can interfere with walking and weight-bearing activities.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=85",
+      "https://i.pinimg.com/1200x/3d/c3/f7/3dc3f7db39982768397c84349c1761f5.jpg",
     title: "Foot Arthritis",
     description:
       "Care for joint changes that may cause foot pain, stiffness and reduced movement.",
   },
   {
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=85",
+      "https://i.pinimg.com/1200x/90/17/98/90179856abce504c49839da86fc4eeaa.jpg",
     alt: "Sports foot injury treatment",
     title: "Sports Foot Injuries",
     description:

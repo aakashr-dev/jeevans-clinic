@@ -7,7 +7,7 @@ const CONDITIONS = [
     description:
       "Advanced care for knee pain, ligament injuries, arthritis and sports-related conditions.",
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/f0/7d/6c/f07d6c3299d53f64b121d4370d70a470.jpg",
     path: "/conditions/knee",
   },
   {
@@ -15,7 +15,7 @@ const CONDITIONS = [
     description:
       "Personalised treatment for shoulder pain, sports injuries and restricted movement.",
     image:
-      "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/35/3a/58/353a586f176f49331f196e42d354f029.jpg",
     path: "/conditions/shoulder",
   },
   {
@@ -31,7 +31,7 @@ const CONDITIONS = [
     description:
       "Modern solutions for hip pain, stiffness and joint degeneration.",
     image:
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=85",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShhGiO0YxIDAQK4cIfRVfJYJQeG8wvUS5DFPMH5W6Zhw&s=10",
     path: "/conditions/hip",
   },
   {
@@ -39,7 +39,7 @@ const CONDITIONS = [
     description:
       "Precision treatment for ligament injuries, instability and ankle pain.",
     image:
-      "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/e2/81/20/e281207f8485f750849a43b8d17eab1e.jpg",
     path: "/conditions/ankle",
   },
   {
@@ -47,7 +47,7 @@ const CONDITIONS = [
     description:
       "Targeted care for plantar fasciitis, sports injuries and chronic foot pain.",
     image:
-      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/bd/03/e8/bd03e8841762fb24b68fe5cc3ab1add8.jpg",
     path: "/conditions/foot",
   },
 ];
@@ -122,42 +122,42 @@ const BLOGS = [
     title: "Understanding Joint Pain",
     category: "Orthopedics",
     image:
-      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/3b/66/2a/3b662ae4a43280da794f2b993ec4b81e.jpg",
     slug: "understanding-joint-pain",
   },
   {
     title: "When Should You See an Orthopedic Surgeon?",
     category: "Patient Guide",
     image:
-      "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/1200x/c6/d9/e5/c6d9e56211e882c582785a5695dd7e3e.jpg",
     slug: "when-to-see-an-orthopedic-surgeon",
   },
   {
     title: "Returning to an Active Lifestyle",
     category: "Sports Medicine",
     image:
-      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/9a/94/76/9a9476984e2cfd1316e9ea154c1dd932.jpg",
     slug: "returning-to-an-active-lifestyle",
   },
   {
     title: "Knee Pain: Causes and Treatment",
     category: "Knee Care",
     image:
-      "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/7b/07/78/7b07781fa93b4ff0150b799a580ca1ba.jpg",
     slug: "knee-pain-causes-treatment",
   },
   {
     title: "Understanding Sports Injuries",
     category: "Sports Medicine",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/52/a4/2f/52a42f2df1a674b45893fc8b009110ee.jpg",
     slug: "understanding-sports-injuries",
   },
   {
     title: "Recovery After Joint Surgery",
     category: "Recovery",
     image:
-      "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1200&q=85",
+      "https://i.pinimg.com/736x/52/a4/2f/52a42f2df1a674b45893fc8b009110ee.jpg",
     slug: "recovery-after-joint-surgery",
   },
 ];
