@@ -231,7 +231,7 @@ function Home() {
                 <div className="aspect-[4/3.5] overflow-hidden">
                   <img
                     src={condition.image}
-                    alt={`${condition.title}`}
+                    alt={condition.title}
                     className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                   />
                 </div>
@@ -319,7 +319,7 @@ function Home() {
 
 
       {/* =====================================================
-          4. SIMPLE TREATMENT JOURNEY (Assessment -> Diagnosis -> Treatment -> Recovery)
+          4. SIMPLE TREATMENT JOURNEY
       ===================================================== */}
       <section id="journey" className="bg-teal py-20 md:py-28 text-white">
         <div className="container-custom">
@@ -339,12 +339,14 @@ function Home() {
                 Our step-by-step clinical process ensures you receive accurate evaluation, clear answers, and targeted physiotherapy treatments every step of the way.
               </p>
 
-              <Link
-                to="/about/doctor"
-                className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-white transition hover:text-gold"
-              >
-                Learn More About Our Process →
-              </Link>
+              <div className="mt-8">
+                <Link
+                  to="/about/doctor"
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-white transition hover:text-gold"
+                >
+                  Learn More About Our Process →
+                </Link>
+              </div>
             </div>
 
             {/* 4 JOURNEY STEPS */}
