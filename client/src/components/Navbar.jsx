@@ -391,7 +391,7 @@ function Navbar() {
                     shadow-[0_20px_60px_rgba(0,0,0,0.14)]
                   "
                 >
-                  {CONDITION_LINKS.map((condition, index) => (
+                  {CONDITION_LINKS.map((condition) => (
                     <Link
                       key={condition.path}
                       to={condition.path}
@@ -408,32 +408,17 @@ function Navbar() {
                         hover:bg-[#F6F3EE]
                       "
                     >
-                      <div className="flex items-center gap-3">
-
-                        <span
-                          className="
-                            text-[10px]
-                            font-bold
-                            tracking-[0.05em]
-                            text-[#D49E47]
-                          "
-                        >
-                          0{index + 1}
-                        </span>
-
-                        <span
-                          className="
-                            text-[13px]
-                            font-medium
-                            uppercase
-                            tracking-[0.08em]
-                            text-[#173F3D]
-                          "
-                        >
-                          {condition.name}
-                        </span>
-
-                      </div>
+                      <span
+                        className="
+                          text-[13px]
+                          font-medium
+                          uppercase
+                          tracking-[0.08em]
+                          text-[#173F3D]
+                        "
+                      >
+                        {condition.name}
+                      </span>
 
                       <span
                         className="
@@ -604,12 +589,12 @@ function Navbar() {
               className="
                 rounded-md
                 bg-[#173F3D]
-                px-7
-                py-4
-                text-[13px]
+                px-5
+                py-2.5
+                text-[12px]
                 font-bold
                 uppercase
-                tracking-[0.1em]
+                tracking-[0.08em]
                 text-white
                 transition
                 hover:bg-[#D49E47]
@@ -789,7 +774,7 @@ function Navbar() {
               {mobileConditionsOpen && (
                 <div className="pb-4 pl-4">
 
-                  {CONDITION_LINKS.map((condition, index) => (
+                  {CONDITION_LINKS.map((condition) => (
                     <Link
                       key={condition.path}
                       to={condition.path}
@@ -808,14 +793,8 @@ function Navbar() {
                         last:border-0
                       "
                     >
-                      <span className="flex items-center gap-3">
-
-                        <span className="text-[10px] font-bold text-[#D49E47]">
-                          0{index + 1}
-                        </span>
-
+                      <span>
                         {condition.name}
-
                       </span>
 
                       <span className="text-[#D49E47]">
@@ -929,13 +908,13 @@ function Navbar() {
                 className="
                   rounded-md
                   bg-[#173F3D]
-                  px-6
-                  py-4
+                  px-5
+                  py-3
                   text-center
                   text-xs
                   font-bold
                   uppercase
-                  tracking-[0.12em]
+                  tracking-[0.1em]
                   text-white
                 "
               >
