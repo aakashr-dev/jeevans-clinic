@@ -1,0 +1,847 @@
+import { Link } from "react-router-dom";
+import HeroSlider from "../components/HeroSlider.jsx";
+
+const CONDITIONS = [
+  {
+    title: "Knee",
+    description:
+      "Advanced care for knee pain, ligament injuries, arthritis and sports-related conditions.",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85",
+    path: "/conditions/knee",
+  },
+  {
+    title: "Shoulder",
+    description:
+      "Personalised treatment for shoulder pain, sports injuries and restricted movement.",
+    image:
+      "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=85",
+    path: "/conditions/shoulder",
+  },
+  {
+    title: "Spine",
+    description:
+      "Comprehensive care for back pain, disc problems and spinal conditions.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2u2nERnzKKgL-WBxzzbnqMpO68CZFxUYYXg7310CWwdu4JASL_5saQVw&s=10",
+    path: "/conditions/spine",
+  },
+  {
+    title: "Hip",
+    description:
+      "Modern solutions for hip pain, stiffness and joint degeneration.",
+    image:
+      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=85",
+    path: "/conditions/hip",
+  },
+  {
+    title: "Ankle",
+    description:
+      "Precision treatment for ligament injuries, instability and ankle pain.",
+    image:
+      "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=85",
+    path: "/conditions/ankle",
+  },
+  {
+    title: "Foot",
+    description:
+      "Targeted care for plantar fasciitis, sports injuries and chronic foot pain.",
+    image:
+      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=85",
+    path: "/conditions/foot",
+  },
+];
+
+const STATS = [
+  {
+    value: "15+",
+    label: "Years Experience",
+  },
+  {
+    value: "1000+",
+    label: "Patients Treated",
+  },
+  {
+    value: "200+",
+    label: "Successful Operations",
+  },
+  {
+    value: "2",
+    label: "Treatment Centres",
+  },
+];
+
+const EXPERTISE = [
+  {
+    number: "01",
+    title: "Orthopedic Surgery",
+    text: "Comprehensive surgical care for a wide range of musculoskeletal conditions.",
+  },
+  {
+    number: "02",
+    title: "Sports Medicine",
+    text: "Specialised treatment and recovery support for athletes and active individuals.",
+  },
+  {
+    number: "03",
+    title: "Joint Replacement",
+    text: "Advanced care for patients affected by significant joint degeneration.",
+  },
+  {
+    number: "04",
+    title: "Regenerative Care",
+    text: "Modern treatment approaches for selected orthopedic and musculoskeletal conditions.",
+  },
+];
+
+const JOURNEY = [
+  {
+    number: "01",
+    title: "Listen",
+    text: "Understanding your symptoms, lifestyle and individual goals.",
+  },
+  {
+    number: "02",
+    title: "Assess",
+    text: "Detailed clinical evaluation to understand the underlying condition.",
+  },
+  {
+    number: "03",
+    title: "Treat",
+    text: "Creating a personalised treatment approach based on your needs.",
+  },
+  {
+    number: "04",
+    title: "Recover",
+    text: "Supporting your journey back towards comfortable movement.",
+  },
+];
+
+const BLOGS = [
+  {
+    title: "Understanding Joint Pain",
+    category: "Orthopedics",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=85",
+    slug: "understanding-joint-pain",
+  },
+  {
+    title: "When Should You See an Orthopedic Surgeon?",
+    category: "Patient Guide",
+    image:
+      "https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1200&q=85",
+    slug: "when-to-see-an-orthopedic-surgeon",
+  },
+  {
+    title: "Returning to an Active Lifestyle",
+    category: "Sports Medicine",
+    image:
+      "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=85",
+    slug: "returning-to-an-active-lifestyle",
+  },
+  {
+    title: "Knee Pain: Causes and Treatment",
+    category: "Knee Care",
+    image:
+      "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=85",
+    slug: "knee-pain-causes-treatment",
+  },
+  {
+    title: "Understanding Sports Injuries",
+    category: "Sports Medicine",
+    image:
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=85",
+    slug: "understanding-sports-injuries",
+  },
+  {
+    title: "Recovery After Joint Surgery",
+    category: "Recovery",
+    image:
+      "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=1200&q=85",
+    slug: "recovery-after-joint-surgery",
+  },
+];
+
+function Home() {
+  return (
+    <main className="bg-white">
+
+      {/* =====================================================
+          HERO
+      ===================================================== */}
+
+      <HeroSlider />
+
+
+      {/* =====================================================
+          EXPERTISE STRIP
+      ===================================================== */}
+
+      <section className="border-b border-gray-100 bg-white">
+
+        <div className="container-custom">
+
+          <div className="flex flex-col gap-6 py-8 md:flex-row md:items-center md:justify-between">
+
+            <div className="flex items-center gap-3">
+
+              <span className="h-2 w-2 rounded-full bg-gold" />
+
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
+                Areas of Expertise
+              </p>
+
+            </div>
+
+            <div className="flex flex-wrap gap-x-8 gap-y-3">
+
+              <span className="text-sm font-medium text-teal/60">
+                Orthopedics
+              </span>
+
+              <span className="text-sm font-medium text-teal/60">
+                Sports Medicine
+              </span>
+
+              <span className="text-sm font-medium text-teal/60">
+                Joint Care
+              </span>
+
+              <span className="text-sm font-medium text-teal/60">
+                Spine Care
+              </span>
+
+              <span className="text-sm font-medium text-teal/60">
+                Regenerative Care
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          ABOUT DOCTOR
+      ===================================================== */}
+
+      <section
+        id="about"
+        className="section"
+      >
+
+        <div className="container-custom grid items-center gap-16 lg:grid-cols-2">
+
+          <div className="relative">
+
+            <div className="overflow-hidden rounded-[32px]">
+
+              <img
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1200&q=85"
+                alt="Orthopedic doctor"
+                className="aspect-[4/5] w-full object-cover"
+              />
+
+            </div>
+
+            <div className="absolute -bottom-7 right-5 rounded-[22px] bg-teal px-7 py-6 shadow-xl md:right-8">
+
+              <p className="font-display text-4xl text-gold">
+                15+
+              </p>
+
+              <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.18em] text-white/60">
+                Years Experience
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div>
+
+            <p className="eyebrow">
+              About the Doctor
+            </p>
+
+            <h2 className="section-heading">
+              Expertise with
+              <br />
+              a <span>human touch.</span>
+            </h2>
+
+            <p className="mt-7 max-w-xl text-base leading-8 text-gray-600 md:text-lg">
+              Dr. Santhosh Jacob focuses on providing thoughtful
+              orthopedic care that begins with understanding the
+              individual patient.
+            </p>
+
+            <p className="mt-5 max-w-xl text-base leading-8 text-gray-600">
+              From diagnosis and treatment planning to recovery,
+              every step is designed around the patient&apos;s
+              condition, lifestyle and movement goals.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+
+              <Link
+                to="/about/doctor"
+                className="btn-primary"
+              >
+                Discover More
+              </Link>
+
+              <Link
+                to="/appointment"
+                className="btn-outline"
+              >
+                Book Consultation
+              </Link>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          STATS
+      ===================================================== */}
+
+      <section className="border-y border-gray-100 bg-[#FAFAF8]">
+
+        <div className="container-custom">
+
+          <div className="grid grid-cols-2 md:grid-cols-4">
+
+            {STATS.map((stat, index) => (
+              <div
+                key={stat.label}
+                className={`px-5 py-12 text-center ${
+                  index !== STATS.length - 1
+                    ? "border-r border-gray-200"
+                    : ""
+                }`}
+              >
+
+                <p className="font-display text-4xl text-teal md:text-5xl">
+                  {stat.value}
+                </p>
+
+                <p className="mt-3 text-[9px] font-bold uppercase tracking-[0.16em] text-gray-500">
+                  {stat.label}
+                </p>
+
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          CONDITIONS
+      ===================================================== */}
+
+      <section
+        id="conditions"
+        className="section"
+      >
+
+        <div className="container-custom">
+
+          <div className="mb-14 flex flex-col justify-between gap-7 md:flex-row md:items-end">
+
+            <div>
+
+              <p className="eyebrow">
+                Conditions Treated
+              </p>
+
+              <h2 className="section-heading">
+                Care for every
+                <br />
+                <span>kind of movement.</span>
+              </h2>
+
+            </div>
+
+            <div className="max-w-md">
+
+              <p className="text-sm leading-7 text-gray-600">
+                Specialised orthopedic care across joints,
+                spine, sports injuries and mobility conditions.
+              </p>
+
+              <Link
+                to="/conditions/knee"
+                className="mt-4 inline-flex text-xs font-bold uppercase tracking-[0.12em] text-teal hover:text-gold"
+              >
+                Explore All Conditions →
+              </Link>
+
+            </div>
+
+          </div>
+
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+            {CONDITIONS.map((condition) => (
+              <Link
+                key={condition.title}
+                to={condition.path}
+                className="group relative overflow-hidden rounded-[28px] bg-teal"
+              >
+
+                <div className="aspect-[4/4.5] overflow-hidden">
+
+                  <img
+                    src={condition.image}
+                    alt={`${condition.title} treatment`}
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+
+                <div className="absolute bottom-0 left-0 right-0 p-7">
+
+                  <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-gold-light">
+                    Orthopedic Care
+                  </p>
+
+                  <h3 className="mt-2 font-display text-3xl text-white">
+                    {condition.title}
+                  </h3>
+
+                  <p className="mt-3 max-w-sm text-sm leading-6 text-white/70">
+                    {condition.description}
+                  </p>
+
+                  <span className="mt-5 inline-flex text-[10px] font-bold uppercase tracking-[0.15em] text-white">
+                    Explore →
+                  </span>
+
+                </div>
+
+              </Link>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          OUR APPROACH
+      ===================================================== */}
+
+      <section
+        id="journey"
+        className="bg-teal"
+      >
+
+        <div className="container-custom py-20 md:py-28">
+
+          <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr]">
+
+            <div>
+
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gold">
+                Our Approach
+              </p>
+
+              <h2 className="mt-5 font-display text-4xl leading-tight text-white md:text-6xl">
+                From understanding
+                <br />
+                your problem to
+                <br />
+                <span className="text-gold">
+                  restoring movement.
+                </span>
+              </h2>
+
+              <p className="mt-7 max-w-xl text-base leading-8 text-white/60">
+                Every patient is different. Our approach combines
+                careful diagnosis, personalised treatment planning
+                and structured recovery support.
+              </p>
+
+              <Link
+                to="/about/doctor"
+                className="mt-8 inline-flex text-xs font-bold uppercase tracking-[0.15em] text-white transition hover:text-gold"
+              >
+                Discover Our Approach →
+              </Link>
+
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+
+              {JOURNEY.map((item) => (
+                <div
+                  key={item.number}
+                  className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:border-gold/40 hover:bg-white/[0.06]"
+                >
+
+                  <span className="text-xs font-bold tracking-[0.2em] text-gold">
+                    {item.number}
+                  </span>
+
+                  <h3 className="mt-7 font-display text-2xl text-white">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-7 text-white/50">
+                    {item.text}
+                  </p>
+
+                </div>
+              ))}
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          EXPERTISE
+      ===================================================== */}
+
+      <section className="section">
+
+        <div className="container-custom">
+
+          <div className="mb-14">
+
+            <p className="eyebrow">
+              Clinical Expertise
+            </p>
+
+            <h2 className="section-heading">
+              Focused expertise.
+              <br />
+              <span>Personalised treatment.</span>
+            </h2>
+
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+
+            {EXPERTISE.map((item) => (
+              <article
+                key={item.number}
+                className="rounded-[26px] border border-gray-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+
+                <span className="text-xs font-bold tracking-[0.2em] text-gold">
+                  {item.number}
+                </span>
+
+                <h3 className="mt-7 font-display text-2xl leading-tight text-teal">
+                  {item.title}
+                </h3>
+
+                <p className="mt-4 text-sm leading-7 text-gray-600">
+                  {item.text}
+                </p>
+
+              </article>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          CENTRE FEATURE
+      ===================================================== */}
+
+      <section className="section bg-[#FAFAF8]">
+
+        <div className="container-custom grid items-center gap-14 lg:grid-cols-2">
+
+          <div className="overflow-hidden rounded-[32px]">
+
+            <img
+              src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=85"
+              alt="Modern medical centre"
+              className="aspect-[4/3] w-full object-cover"
+            />
+
+          </div>
+
+          <div>
+
+            <p className="eyebrow">
+              Our Centre
+            </p>
+
+            <h2 className="section-heading">
+              A space designed
+              <br />
+              around <span>care.</span>
+            </h2>
+
+            <p className="mt-7 max-w-xl text-base leading-8 text-gray-600">
+              Our treatment environment is designed to support
+              consultation, diagnosis, treatment planning and
+              recovery in a patient-focused setting.
+            </p>
+
+            <div className="mt-7 space-y-4">
+
+              {[
+                ["01", "Orthopedic Consultation"],
+                ["02", "Sports Medicine"],
+                ["03", "Spine & Joint Care"],
+              ].map(([number, text]) => (
+                <div
+                  key={number}
+                  className="flex items-center gap-4"
+                >
+
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-teal text-xs font-bold text-gold">
+                    {number}
+                  </span>
+
+                  <span className="text-sm font-medium text-teal">
+                    {text}
+                  </span>
+
+                </div>
+              ))}
+
+            </div>
+
+            <Link
+              to="/programs/centers"
+              className="btn-primary mt-8"
+            >
+              Explore Our Centres
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+    INSIGHTS
+===================================================== */}
+
+<section
+  id="insights"
+  className="section overflow-hidden"
+>
+  <div className="container-custom">
+
+    {/* HEADER */}
+
+    <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
+
+      <div>
+        <p className="eyebrow">
+          Insights
+        </p>
+
+        <h2 className="section-heading">
+          Knowledge that helps
+          <br />
+          you <span>move better.</span>
+        </h2>
+      </div>
+
+      <Link
+        to="/blog"
+        className="btn-outline"
+      >
+        View All Articles
+      </Link>
+
+    </div>
+
+  </div>
+
+
+  {/* =====================================================
+      AUTO MOVING CARDS
+  ===================================================== */}
+
+  <div className="relative w-full overflow-hidden">
+
+    {/* LEFT FADE */}
+
+    <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-20 bg-gradient-to-r from-white to-transparent" />
+
+    {/* RIGHT FADE */}
+
+    <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-20 bg-gradient-to-l from-white to-transparent" />
+
+
+    <div className="insights-track">
+
+      {/* FIRST SET */}
+
+      <div className="insights-group">
+
+        {BLOGS.map((blog) => (
+          <article
+            key={blog.slug}
+            className="insight-card group"
+          >
+
+            {/* IMAGE */}
+
+            <div className="aspect-[16/10] overflow-hidden">
+
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              />
+
+            </div>
+
+
+            {/* CONTENT */}
+
+            <div className="p-7">
+
+              <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-gold">
+                {blog.category}
+              </p>
+
+              <h3 className="mt-3 min-h-[65px] font-display text-2xl leading-tight text-teal">
+                {blog.title}
+              </h3>
+
+              <Link
+                to={`/blog/${blog.slug}`}
+                className="mt-6 inline-flex text-xs font-bold uppercase tracking-[0.12em] text-teal transition hover:text-gold"
+              >
+                Read Article →
+              </Link>
+
+            </div>
+
+          </article>
+        ))}
+
+      </div>
+
+
+      {/* DUPLICATE FOR INFINITE LOOP */}
+
+      <div
+        className="insights-group"
+        aria-hidden="true"
+      >
+
+        {BLOGS.map((blog) => (
+          <article
+            key={`duplicate-${blog.slug}`}
+            className="insight-card group"
+          >
+
+            <div className="aspect-[16/10] overflow-hidden">
+
+              <img
+                src={blog.image}
+                alt=""
+                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+              />
+
+            </div>
+
+            <div className="p-7">
+
+              <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-gold">
+                {blog.category}
+              </p>
+
+              <h3 className="mt-3 min-h-[65px] font-display text-2xl leading-tight text-teal">
+                {blog.title}
+              </h3>
+
+              <span className="mt-6 inline-flex text-xs font-bold uppercase tracking-[0.12em] text-teal">
+                Read Article →
+              </span>
+
+            </div>
+
+          </article>
+        ))}
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      {/* =====================================================
+          FINAL CTA
+      ===================================================== */}
+
+      <section className="px-6 pb-20 md:px-10 md:pb-28 lg:px-12">
+
+        <div className="mx-auto max-w-[1400px] overflow-hidden rounded-[34px] bg-[#F6F3EE] px-7 py-16 text-center md:px-16 md:py-20">
+
+          <p className="eyebrow justify-center">
+            Start Your Recovery
+          </p>
+
+          <h2 className="mx-auto mt-4 max-w-4xl font-display text-4xl leading-tight text-teal md:text-6xl">
+            Ready to take the first step towards
+            <br />
+            <span className="text-gold">
+              better movement?
+            </span>
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-gray-600">
+            Book a consultation and let&apos;s find the right
+            treatment path for you.
+          </p>
+
+          <Link
+            to="/appointment"
+            className="btn-primary mt-8"
+          >
+            Book an Appointment
+          </Link>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+}
+
+export default Home;
