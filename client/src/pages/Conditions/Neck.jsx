@@ -297,9 +297,9 @@ function Neck() {
 
               <div className="flex items-center gap-3">
 
-                <span className="h-px w-10 bg-[#C08A3E]" />
+                <span className="h-px w-10 bg-[#D49E47]" />
 
-                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
                   Conditions Treated / 01
                 </p>
 
@@ -324,7 +324,7 @@ function Neck() {
 
                 <br />
 
-                <span className="text-[#C08A3E]">
+                <span className="text-[#D49E47]">
                   Care.
                 </span>
               </h1>
@@ -345,7 +345,7 @@ function Neck() {
                   to="/appointment"
                   className="
                     rounded-md
-                    bg-[#C08A3E]
+                    bg-[#D49E47]
                     px-7
                     py-4
                     text-[10px]
@@ -397,7 +397,7 @@ function Neck() {
                     01
                   </span>
 
-                  <span className="h-px w-10 bg-[#C08A3E]" />
+                  <span className="h-px w-10 bg-[#D49E47]" />
                 </div>
 
                 <div className="flex items-center gap-3 text-[10px] text-white/35">
@@ -488,7 +488,7 @@ function Neck() {
               "
             >
 
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#C08A3E] text-white">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#D49E47] text-white">
                 <SmallIcon type="scan" />
               </div>
 
@@ -559,11 +559,11 @@ function Neck() {
 
             <div className="flex items-center gap-4">
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#D49E47]">
                 Understanding Neck Pain
               </p>
 
-              <span className="h-px w-8 bg-[#C08A3E]" />
+              <span className="h-px w-8 bg-[#D49E47]" />
 
             </div>
 
@@ -583,7 +583,7 @@ function Neck() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 understanding.
               </span>
             </h2>
@@ -659,7 +659,7 @@ function Neck() {
 
           <div className="text-center">
 
-            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
               Common Neck Conditions
             </p>
 
@@ -676,12 +676,12 @@ function Neck() {
             >
               Conditions we{" "}
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 treat
               </span>
             </h2>
 
-            <div className="mx-auto mt-5 h-px w-10 bg-[#C08A3E]" />
+            <div className="mx-auto mt-5 h-px w-10 bg-[#D49E47]" />
 
           </div>
 
@@ -768,7 +768,7 @@ function Neck() {
                 tracking-[0.16em]
                 text-white
                 transition
-                hover:bg-[#C08A3E]
+                hover:bg-[#D49E47]
               "
             >
               View All Conditions
@@ -794,7 +794,7 @@ function Neck() {
 
             <div>
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
                 Our Approach
               </p>
 
@@ -816,7 +816,7 @@ function Neck() {
 
                 to{" "}
 
-                <span className="text-[#C08A3E]">
+                <span className="text-[#D49E47]">
                   recovery.
                 </span>
               </h2>
@@ -872,7 +872,7 @@ function Neck() {
                     />
                   )}
 
-                  <p className="mt-7 text-[10px] font-bold tracking-[0.15em] text-[#C08A3E]">
+                  <p className="mt-7 text-[10px] font-bold tracking-[0.15em] text-[#D49E47]">
                     {step.number}
                   </p>
 
@@ -902,7 +902,7 @@ function Neck() {
 
       <section className="bg-white px-6 py-24 text-center md:py-32">
 
-        <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+        <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
           Take The Next Step
         </p>
 
@@ -947,7 +947,7 @@ function Neck() {
             tracking-[0.16em]
             text-white
             transition
-            hover:bg-[#C08A3E]
+            hover:bg-[#D49E47]
           "
         >
           Book An Appointment

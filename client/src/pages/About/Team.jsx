@@ -87,9 +87,9 @@ function Team() {
 
             <div className="flex items-center gap-3">
 
-              <span className="h-px w-10 bg-[#C08A3E]" />
+              <span className="h-px w-10 bg-[#D49E47]" />
 
-              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#C08A3E]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#D49E47]">
                 Our Team
               </span>
 
@@ -101,7 +101,7 @@ function Team() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 together.
               </span>
 
@@ -118,7 +118,7 @@ function Team() {
 
               <Link
                 to="/appointment"
-                className="inline-flex rounded-md border border-[#C08A3E] bg-[#C08A3E] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-white hover:text-[#073B38]"
+                className="inline-flex rounded-md border border-[#D49E47] bg-[#D49E47] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-white hover:text-[#073B38]"
               >
                 Book Appointment
               </Link>
@@ -135,7 +135,7 @@ function Team() {
             01
           </span>
 
-          <span className="h-px w-10 bg-[#C08A3E]" />
+          <span className="h-px w-10 bg-[#D49E47]" />
 
           <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-white/50">
             Meet The Team
@@ -154,7 +154,7 @@ function Team() {
 
         <div className="mx-auto max-w-[1250px] text-center">
 
-          <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+          <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
             Meet Our Team
           </p>
 
@@ -162,7 +162,7 @@ function Team() {
 
             Experienced.
 
-            <span className="text-[#C08A3E]">
+            <span className="text-[#D49E47]">
               {" "}Collaborative.
             </span>
 
@@ -172,7 +172,7 @@ function Team() {
 
           </h2>
 
-          <div className="mx-auto mt-7 h-px w-12 bg-[#C08A3E]" />
+          <div className="mx-auto mt-7 h-px w-12 bg-[#D49E47]" />
 
           <p className="mx-auto mt-7 max-w-[600px] text-[13px] leading-7 text-gray-500">
             Great care is never delivered by one person alone.
@@ -216,7 +216,7 @@ function Team() {
 
                   <div className="absolute inset-0 bg-gradient-to-t from-[#073B38]/60 via-transparent to-transparent opacity-0 transition duration-500 group-hover:opacity-100" />
 
-                  <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-2 text-[8px] font-bold tracking-[0.15em] text-[#C08A3E] backdrop-blur">
+                  <span className="absolute left-5 top-5 rounded-full bg-white/90 px-3 py-2 text-[8px] font-bold tracking-[0.15em] text-[#D49E47] backdrop-blur">
                     0{index + 1}
                   </span>
 
@@ -230,11 +230,11 @@ function Team() {
                     {member.name}
                   </h3>
 
-                  <p className="mt-2 text-[10px] font-bold uppercase tracking-[0.14em] text-[#C08A3E]">
+                  <p className="mt-2 text-[10px] font-bold uppercase tracking-[0.14em] text-[#D49E47]">
                     {member.role}
                   </p>
 
-                  <div className="mt-5 h-px w-8 bg-[#C08A3E]" />
+                  <div className="mt-5 h-px w-8 bg-[#D49E47]" />
 
                   <p className="mt-4 text-[11px] leading-5 text-gray-500">
                     {member.specialty}
@@ -274,7 +274,7 @@ function Team() {
 
               <div className="flex items-center justify-between">
 
-                <span className="font-display text-[28px] text-[#C08A3E]">
+                <span className="font-display text-[28px] text-[#D49E47]">
                   {value.number}
                 </span>
 
@@ -313,7 +313,7 @@ function Team() {
 
           <div>
 
-            <p className="text-[10px] font-bold uppercase tracking-[0.23em] text-[#C08A3E]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.23em] text-[#D49E47]">
               Care Built Around You
             </p>
 
@@ -327,7 +327,7 @@ function Team() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 live better.
               </span>
 
@@ -343,14 +343,14 @@ function Team() {
 
               <Link
                 to="/appointment"
-                className="rounded-md bg-[#103F3A] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-[#C08A3E]"
+                className="rounded-md bg-[#103F3A] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-[#D49E47]"
               >
                 Book An Appointment
               </Link>
 
               <a
                 href="#team"
-                className="rounded-md border border-[#BFC8C5] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-[#103F3A] transition hover:border-[#C08A3E] hover:text-[#C08A3E]"
+                className="rounded-md border border-[#BFC8C5] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-[#103F3A] transition hover:border-[#D49E47] hover:text-[#D49E47]"
               >
                 Meet The Team
               </a>
@@ -373,7 +373,7 @@ function Team() {
 
             <div className="absolute bottom-6 left-6 right-6 rounded-lg border border-white/20 bg-[#073B38]/80 p-5 backdrop-blur-md">
 
-              <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#C08A3E]">
+              <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#D49E47]">
                 One Team
               </p>
 
@@ -400,7 +400,7 @@ function Team() {
 
         <div className="relative mx-auto max-w-[850px]">
 
-          <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+          <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
             Your Next Step
           </p>
 
@@ -412,7 +412,7 @@ function Team() {
 
             starts with the
 
-            <span className="text-[#C08A3E]">
+            <span className="text-[#D49E47]">
               {" "}right team.
             </span>
 
@@ -425,7 +425,7 @@ function Team() {
 
           <Link
             to="/appointment"
-            className="mt-9 inline-flex rounded-md bg-[#C08A3E] px-8 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-white hover:text-[#103F3A]"
+            className="mt-9 inline-flex rounded-md bg-[#D49E47] px-8 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-white hover:text-[#103F3A]"
           >
             Book A Consultation
           </Link>

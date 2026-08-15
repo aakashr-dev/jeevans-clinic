@@ -298,9 +298,9 @@ function Knee() {
 
               <div className="flex items-center gap-3">
 
-                <span className="h-px w-10 bg-[#C08A3E]" />
+                <span className="h-px w-10 bg-[#D49E47]" />
 
-                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+                <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
                   Conditions Treated / 02
                 </p>
 
@@ -326,7 +326,7 @@ function Knee() {
 
                 <br />
 
-                <span className="text-[#C08A3E]">
+                <span className="text-[#D49E47]">
                   Care.
                 </span>
 
@@ -350,7 +350,7 @@ function Knee() {
                   to="/appointment"
                   className="
                     rounded-md
-                    bg-[#C08A3E]
+                    bg-[#D49E47]
                     px-7
                     py-4
                     text-[10px]
@@ -405,7 +405,7 @@ function Knee() {
                     01
                   </span>
 
-                  <span className="h-px w-10 bg-[#C08A3E]" />
+                  <span className="h-px w-10 bg-[#D49E47]" />
 
                 </div>
 
@@ -507,7 +507,7 @@ function Knee() {
               "
             >
 
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#C08A3E] text-white">
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#D49E47] text-white">
                 <SmallIcon type="scan" />
               </div>
 
@@ -580,11 +580,11 @@ function Knee() {
 
             <div className="flex items-center gap-4">
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#D49E47]">
                 Understanding Knee Pain
               </p>
 
-              <span className="h-px w-8 bg-[#C08A3E]" />
+              <span className="h-px w-8 bg-[#D49E47]" />
 
             </div>
 
@@ -605,7 +605,7 @@ function Knee() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 understanding.
               </span>
 
@@ -686,7 +686,7 @@ function Knee() {
 
           <div className="text-center">
 
-            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
               Common Knee Conditions
             </p>
 
@@ -704,13 +704,13 @@ function Knee() {
             >
               Conditions we{" "}
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 treat
               </span>
             </h2>
 
 
-            <div className="mx-auto mt-5 h-px w-10 bg-[#C08A3E]" />
+            <div className="mx-auto mt-5 h-px w-10 bg-[#D49E47]" />
 
           </div>
 
@@ -807,7 +807,7 @@ function Knee() {
                 tracking-[0.16em]
                 text-white
                 transition
-                hover:bg-[#C08A3E]
+                hover:bg-[#D49E47]
               "
             >
               View All Conditions
@@ -834,7 +834,7 @@ function Knee() {
 
             <div>
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
                 Our Approach
               </p>
 
@@ -857,7 +857,7 @@ function Knee() {
 
                 to{" "}
 
-                <span className="text-[#C08A3E]">
+                <span className="text-[#D49E47]">
                   recovery.
                 </span>
               </h2>
@@ -923,7 +923,7 @@ function Knee() {
 
                   {/* NUMBER */}
 
-                  <p className="mt-7 text-[10px] font-bold tracking-[0.15em] text-[#C08A3E]">
+                  <p className="mt-7 text-[10px] font-bold tracking-[0.15em] text-[#D49E47]">
                     {step.number}
                   </p>
 
@@ -960,7 +960,7 @@ function Knee() {
 
       <section className="bg-white px-6 py-24 text-center md:py-32">
 
-        <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+        <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
           Take The Next Step
         </p>
 
@@ -1008,7 +1008,7 @@ function Knee() {
             tracking-[0.16em]
             text-white
             transition
-            hover:bg-[#C08A3E]
+            hover:bg-[#D49E47]
           "
         >
           Book An Appointment

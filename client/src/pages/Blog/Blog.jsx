@@ -108,9 +108,9 @@ function Blog() {
 
               <div className="mb-7 flex items-center gap-3">
 
-                <span className="h-[2px] w-8 bg-[#C08A3E]" />
+                <span className="h-[2px] w-8 bg-[#D49E47]" />
 
-                <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#C08A3E]">
+                <span className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#D49E47]">
                   Insights & Knowledge
                 </span>
 
@@ -126,7 +126,7 @@ function Blog() {
 
                 <br />
 
-                <span className="text-[#C08A3E]">
+                <span className="text-[#D49E47]">
                   move better.
                 </span>
 
@@ -155,14 +155,14 @@ function Blog() {
 
             {/* Floating icon */}
 
-            <div className="absolute left-8 top-1/2 flex h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border border-[#C08A3E] bg-white/70 backdrop-blur md:left-14">
+            <div className="absolute left-8 top-1/2 flex h-16 w-16 -translate-y-1/2 items-center justify-center rounded-full border border-[#D49E47] bg-white/70 backdrop-blur md:left-14">
 
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.3"
-                className="h-7 w-7 text-[#C08A3E]"
+                className="h-7 w-7 text-[#D49E47]"
               >
                 <path d="M6 3h9l3 3v15H6z" />
                 <path d="M15 3v4h3" />
@@ -205,7 +205,7 @@ function Blog() {
 
               <div className="flex flex-wrap items-center gap-3">
 
-                <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#C08A3E]">
+                <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#D49E47]">
                   Featured Insight
                 </span>
 
@@ -217,7 +217,7 @@ function Blog() {
                   {featured.category}
                 </span>
 
-                <span className="h-1 w-1 rounded-full bg-[#C08A3E]" />
+                <span className="h-1 w-1 rounded-full bg-[#D49E47]" />
 
                 <span className="text-[9px] tracking-[0.15em] text-white/45">
                   {featured.date}
@@ -235,7 +235,7 @@ function Blog() {
 
               </h2>
 
-              <div className="mt-6 h-px w-10 bg-[#C08A3E]" />
+              <div className="mt-6 h-px w-10 bg-[#D49E47]" />
 
               <p className="mt-6 max-w-[440px] text-[13px] leading-7 text-white/65">
                 {featured.description}
@@ -243,7 +243,7 @@ function Blog() {
 
               <Link
                 to={`/blog/${featured.slug}`}
-                className="mt-8 inline-flex w-fit items-center gap-3 text-[9px] font-bold uppercase tracking-[0.18em] text-[#C08A3E] transition hover:text-white"
+                className="mt-8 inline-flex w-fit items-center gap-3 text-[9px] font-bold uppercase tracking-[0.18em] text-[#D49E47] transition hover:text-white"
               >
                 Read Article
                 <span>→</span>
@@ -271,13 +271,13 @@ function Blog() {
 
             <div className="flex items-center justify-center gap-3">
 
-              <span className="h-px w-7 bg-[#C08A3E]" />
+              <span className="h-px w-7 bg-[#D49E47]" />
 
-              <span className="text-[9px] font-bold uppercase tracking-[0.23em] text-[#C08A3E]">
+              <span className="text-[9px] font-bold uppercase tracking-[0.23em] text-[#D49E47]">
                 Latest Insights
               </span>
 
-              <span className="h-px w-7 bg-[#C08A3E]" />
+              <span className="h-px w-7 bg-[#D49E47]" />
 
             </div>
 
@@ -285,7 +285,7 @@ function Blog() {
 
               Explore our{" "}
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 insights.
               </span>
 
@@ -359,11 +359,11 @@ function Blog() {
 
                   <div className="flex items-center gap-3">
 
-                    <span className="text-[8px] font-bold tracking-[0.15em] text-[#C08A3E]">
+                    <span className="text-[8px] font-bold tracking-[0.15em] text-[#D49E47]">
                       {article.category}
                     </span>
 
-                    <span className="h-1 w-1 rounded-full bg-[#C08A3E]" />
+                    <span className="h-1 w-1 rounded-full bg-[#D49E47]" />
 
                     <span className="text-[8px] tracking-[0.12em] text-gray-400">
                       {article.date}
@@ -381,7 +381,7 @@ function Blog() {
 
                   <Link
                     to={`/blog/${article.slug}`}
-                    className="mt-5 inline-flex items-center gap-2 text-[8px] font-bold uppercase tracking-[0.17em] text-[#C08A3E] transition hover:text-[#103F3A]"
+                    className="mt-5 inline-flex items-center gap-2 text-[8px] font-bold uppercase tracking-[0.17em] text-[#D49E47] transition hover:text-[#103F3A]"
                   >
                     Read Article
                     <span className="transition-transform group-hover:translate-x-1">
@@ -417,9 +417,9 @@ function Blog() {
 
               <div className="flex items-center gap-3">
 
-                <span className="h-[2px] w-6 bg-[#C08A3E]" />
+                <span className="h-[2px] w-6 bg-[#D49E47]" />
 
-                <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#C08A3E]">
+                <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#D49E47]">
                   From The Clinic
                 </span>
 
@@ -433,13 +433,13 @@ function Blog() {
 
                 leads to better{" "}
 
-                <span className="text-[#C08A3E]">
+                <span className="text-[#D49E47]">
                   care.
                 </span>
 
               </h2>
 
-              <div className="mt-6 h-px w-10 bg-[#C08A3E]" />
+              <div className="mt-6 h-px w-10 bg-[#D49E47]" />
 
               <p className="mt-6 max-w-[450px] text-[12px] leading-6 text-white/55">
                 Our insights are written to help you understand your
@@ -477,7 +477,7 @@ function Blog() {
 
           <div className="mb-8 text-center">
 
-            <span className="text-[9px] font-bold uppercase tracking-[0.23em] text-[#C08A3E]">
+            <span className="text-[9px] font-bold uppercase tracking-[0.23em] text-[#D49E47]">
               Explore By Topic
             </span>
 
@@ -494,7 +494,7 @@ function Blog() {
 
                 <div className="flex items-start justify-between">
 
-                  <span className="font-display text-[28px] text-[#C08A3E]">
+                  <span className="font-display text-[28px] text-[#D49E47]">
                     {topic.number}
                   </span>
 

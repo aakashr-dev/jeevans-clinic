@@ -22,7 +22,7 @@ export default {
         },
 
         gold: {
-          DEFAULT: "#C08A3E",
+          DEFAULT: "#D49E47",
           light: "#D9AE72",
           pale: "#F1E2CC",
         },
@@ -78,7 +78,7 @@ export default {
           "0 20px 50px rgba(23, 63, 61, 0.08)",
 
         gold:
-          "0 12px 35px rgba(192, 138, 62, 0.15)",
+          "0 12px 35px rgba(212, 158, 71, 0.15)",
       },
 
       /* =========================================

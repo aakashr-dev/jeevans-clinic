@@ -156,27 +156,27 @@ function Navbar() {
             <span
               className="
                 font-display
-                text-[29px]
+                text-[22px]
                 font-semibold
                 leading-none
                 tracking-[-0.035em]
                 text-[#10302E]
                 transition
-                md:text-[32px]
+                md:text-[24px]
               "
             >
-              Dr. Santhosh Jacob
+              Jeevan Physiotherapy
             </span>
 
             <span
               className="
-                mt-2
-                text-[10px]
+                mt-1
+                text-[8.5px]
                 font-semibold
                 uppercase
-                tracking-[0.22em]
+                tracking-[0.12em]
                 text-[#173F3D]/60
-                md:text-[11px]
+                md:text-[9.5px]
               "
             >
               Orthopedics · Sports Medicine · Spine
@@ -200,8 +200,8 @@ function Navbar() {
                 transition-colors
                 ${
                   location.pathname === "/"
-                    ? "text-[#C08A3E]"
-                    : "text-[#173F3D] hover:text-[#C08A3E]"
+                    ? "text-[#D49E47]"
+                    : "text-[#173F3D] hover:text-[#D49E47]"
                 }
               `}
             >
@@ -226,8 +226,8 @@ function Navbar() {
                   transition-colors
                   ${
                     isAboutPage
-                      ? "text-[#C08A3E]"
-                      : "text-[#173F3D] hover:text-[#C08A3E]"
+                      ? "text-[#D49E47]"
+                      : "text-[#173F3D] hover:text-[#D49E47]"
                   }
                 `}
               >
@@ -308,7 +308,7 @@ function Navbar() {
                           text-gray-300
                           transition
                           group-hover/item:translate-x-1
-                          group-hover/item:text-[#C08A3E]
+                          group-hover/item:text-[#D49E47]
                         "
                       >
                         →
@@ -337,8 +337,8 @@ function Navbar() {
                   transition-colors
                   ${
                     isConditionPage
-                      ? "text-[#C08A3E]"
-                      : "text-[#173F3D] hover:text-[#C08A3E]"
+                      ? "text-[#D49E47]"
+                      : "text-[#173F3D] hover:text-[#D49E47]"
                   }
                 `}
               >
@@ -415,7 +415,7 @@ function Navbar() {
                             text-[10px]
                             font-bold
                             tracking-[0.05em]
-                            text-[#C08A3E]
+                            text-[#D49E47]
                           "
                         >
                           0{index + 1}
@@ -441,7 +441,7 @@ function Navbar() {
                           text-gray-300
                           transition
                           group-hover/item:translate-x-1
-                          group-hover/item:text-[#C08A3E]
+                          group-hover/item:text-[#D49E47]
                         "
                       >
                         →
@@ -470,8 +470,8 @@ function Navbar() {
                   transition-colors
                   ${
                     isProgramPage
-                      ? "text-[#C08A3E]"
-                      : "text-[#173F3D] hover:text-[#C08A3E]"
+                      ? "text-[#D49E47]"
+                      : "text-[#173F3D] hover:text-[#D49E47]"
                   }
                 `}
               >
@@ -550,7 +550,7 @@ function Navbar() {
                           text-gray-300
                           transition
                           group-hover/item:translate-x-1
-                          group-hover/item:text-[#C08A3E]
+                          group-hover/item:text-[#D49E47]
                         "
                       >
                         →
@@ -571,8 +571,8 @@ function Navbar() {
                 transition-colors
                 ${
                   location.pathname.startsWith("/blog")
-                    ? "text-[#C08A3E]"
-                    : "text-[#173F3D] hover:text-[#C08A3E]"
+                    ? "text-[#D49E47]"
+                    : "text-[#173F3D] hover:text-[#D49E47]"
                 }
               `}
             >
@@ -593,7 +593,7 @@ function Navbar() {
                 font-medium
                 text-[#173F3D]
                 transition
-                hover:text-[#C08A3E]
+                hover:text-[#D49E47]
               "
             >
               Login
@@ -612,7 +612,7 @@ function Navbar() {
                 tracking-[0.1em]
                 text-white
                 transition
-                hover:bg-[#C08A3E]
+                hover:bg-[#D49E47]
               "
             >
               Book Appointment
@@ -749,7 +749,7 @@ function Navbar() {
                     >
                       {link.name}
 
-                      <span className="text-[#C08A3E]">
+                      <span className="text-[#D49E47]">
                         →
                       </span>
                     </Link>
@@ -810,7 +810,7 @@ function Navbar() {
                     >
                       <span className="flex items-center gap-3">
 
-                        <span className="text-[10px] font-bold text-[#C08A3E]">
+                        <span className="text-[10px] font-bold text-[#D49E47]">
                           0{index + 1}
                         </span>
 
@@ -818,7 +818,7 @@ function Navbar() {
 
                       </span>
 
-                      <span className="text-[#C08A3E]">
+                      <span className="text-[#D49E47]">
                         →
                       </span>
                     </Link>
@@ -876,7 +876,7 @@ function Navbar() {
                     >
                       {link.name}
 
-                      <span className="text-[#C08A3E]">
+                      <span className="text-[#D49E47]">
                         →
                       </span>
                     </Link>

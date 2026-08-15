@@ -104,9 +104,9 @@ function Centers() {
 
             <div className="flex items-center gap-3">
 
-              <span className="h-px w-10 bg-[#C08A3E]" />
+              <span className="h-px w-10 bg-[#D49E47]" />
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#D49E47]">
                 Our Centres
               </p>
 
@@ -137,7 +137,7 @@ function Centers() {
 
               to{" "}
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 you.
               </span>
             </h1>
@@ -158,7 +158,7 @@ function Centers() {
                 href="#centres"
                 className="
                   rounded-md
-                  bg-[#C08A3E]
+                  bg-[#D49E47]
                   px-7
                   py-4
                   text-[10px]
@@ -213,7 +213,7 @@ function Centers() {
             01
           </span>
 
-          <span className="h-px w-12 bg-[#C08A3E]" />
+          <span className="h-px w-12 bg-[#D49E47]" />
 
           <span className="text-[10px] text-white/40">
             OUR LOCATIONS
@@ -238,7 +238,7 @@ function Centers() {
 
           <div className="text-center">
 
-            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
               Our Locations
             </p>
 
@@ -257,12 +257,12 @@ function Centers() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 where you need it.
               </span>
             </h2>
 
-            <div className="mx-auto mt-6 h-px w-10 bg-[#C08A3E]" />
+            <div className="mx-auto mt-6 h-px w-10 bg-[#D49E47]" />
 
           </div>
 
@@ -329,7 +329,7 @@ function Centers() {
 
                 <div className="p-7 md:p-8">
 
-                  <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#C08A3E]">
+                  <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-[#D49E47]">
                     {centre.name}
                   </p>
 
@@ -409,7 +409,7 @@ function Centers() {
                         tracking-[0.16em]
                         text-[#10302E]
                         transition
-                        hover:text-[#C08A3E]
+                        hover:text-[#D49E47]
                       "
                     >
                       View Centre
@@ -455,7 +455,7 @@ function Centers() {
   {/* Small map label */}
   <div className="absolute bottom-6 left-6 z-10 rounded-lg bg-white px-5 py-4 shadow-xl">
 
-    <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[#C08A3E]">
+    <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[#D49E47]">
       Main Centre
     </p>
 
@@ -471,7 +471,7 @@ function Centers() {
 
           <div className="flex flex-col justify-center bg-white p-8 md:p-12">
 
-            <p className="text-[10px] font-bold uppercase tracking-[0.23em] text-[#C08A3E]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.23em] text-[#D49E47]">
               Visit Us
             </p>
 
@@ -512,7 +512,7 @@ function Centers() {
 
               <div>
 
-                <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[#C08A3E]">
+                <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[#D49E47]">
                   Opening Hours
                 </p>
 
@@ -524,7 +524,7 @@ function Centers() {
 
               <div>
 
-                <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[#C08A3E]">
+                <p className="text-[9px] font-bold uppercase tracking-[0.16em] text-[#D49E47]">
                   Contact
                 </p>
 
@@ -552,7 +552,7 @@ function Centers() {
                   tracking-[0.15em]
                   text-white
                   transition
-                  hover:bg-[#C08A3E]
+                  hover:bg-[#D49E47]
                 "
               >
                 Get Directions
@@ -599,7 +599,7 @@ function Centers() {
 
             <div>
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.23em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.23em] text-[#D49E47]">
                 Why Our Centres
               </p>
 
@@ -620,7 +620,7 @@ function Centers() {
 
                 around{" "}
 
-                <span className="text-[#C08A3E]">
+                <span className="text-[#D49E47]">
                   people.
                 </span>
               </h2>
@@ -651,7 +651,7 @@ function Centers() {
                   "
                 >
 
-                  <span className="text-[10px] font-bold tracking-[0.15em] text-[#C08A3E]">
+                  <span className="text-[10px] font-bold tracking-[0.15em] text-[#D49E47]">
                     {item.number}
                   </span>
 
@@ -681,7 +681,7 @@ function Centers() {
 
       <section className="bg-white px-6 py-24 text-center md:py-32">
 
-        <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#C08A3E]">
+        <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#D49E47]">
           Your Next Step
         </p>
 
@@ -702,7 +702,7 @@ function Centers() {
 
           <br />
 
-          <span className="text-[#C08A3E]">
+          <span className="text-[#D49E47]">
             moving again.
           </span>
         </h2>
@@ -727,7 +727,7 @@ function Centers() {
             tracking-[0.16em]
             text-white
             transition
-            hover:bg-[#C08A3E]
+            hover:bg-[#D49E47]
           "
         >
           Book An Appointment

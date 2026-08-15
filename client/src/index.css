@@ -119,14 +119,14 @@ a {
   font-size: 11px;
   font-weight: 700;
 
-  color: #c08a3e;
+  color: #D49E47;
 }
 
 .eyebrow::before {
   content: "";
   width: 28px;
   height: 1px;
-  background: #c08a3e;
+  background: #D49E47;
 }
 
 
@@ -147,7 +147,7 @@ a {
 }
 
 .section-heading span {
-  color: #c08a3e;
+  color: #D49E47;
 }
 
 .section-description {
@@ -192,8 +192,8 @@ a {
 }
 
 .btn-primary:hover {
-  background: #c08a3e;
-  border-color: #c08a3e;
+  background: #D49E47;
+  border-color: #D49E47;
   transform: translateY(-2px);
 }
 
@@ -248,7 +248,7 @@ a {
   box-shadow:
     0 20px 50px rgba(23, 63, 61, 0.08);
 
-  border-color: rgba(192, 138, 62, 0.25);
+  border-color: rgba(212, 158, 71, 0.25);
 }
 
 
@@ -430,7 +430,7 @@ a {
 .award-card:hover {
   transform: translateY(-5px);
 
-  border-color: rgba(192, 138, 62, 0.35);
+  border-color: rgba(212, 158, 71, 0.35);
 
   box-shadow:
     0 18px 45px rgba(23, 63, 61, 0.07);
@@ -448,8 +448,8 @@ a {
 
   border-radius: 50%;
 
-  background: rgba(192, 138, 62, 0.1);
-  color: #c08a3e;
+  background: rgba(212, 158, 71, 0.1);
+  color: #D49E47;
 }
 
 .award-title {
@@ -531,7 +531,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 
-  color: #c08a3e;
+  color: #D49E47;
 }
 
 
@@ -651,10 +651,10 @@ a {
 }
 
 .form-input:focus {
-  border-color: #c08a3e;
+  border-color: #D49E47;
 
   box-shadow:
-    0 0 0 3px rgba(192, 138, 62, 0.12);
+    0 0 0 3px rgba(212, 158, 71, 0.12);
 }
 
 .form-textarea {
@@ -707,7 +707,7 @@ a {
   width: 0;
   height: 1px;
 
-  background: #c08a3e;
+  background: #D49E47;
 
   transition: width 0.3s ease;
 }
@@ -751,7 +751,7 @@ a {
 }
 
 .hero-title span {
-  color: #c08a3e;
+  color: #D49E47;
 }
 
 .hero-description {
@@ -772,7 +772,7 @@ a {
 ========================================================= */
 
 .pulse-path {
-  stroke: #c08a3e;
+  stroke: #D49E47;
 
   stroke-width: 2;
 
@@ -836,12 +836,12 @@ a {
 ========================================================= */
 
 ::selection {
-  background: #c08a3e;
+  background: #D49E47;
   color: #f6f3ee;
 }
 
 :focus-visible {
-  outline: 2px solid #c08a3e;
+  outline: 2px solid #D49E47;
   outline-offset: 3px;
 }
 

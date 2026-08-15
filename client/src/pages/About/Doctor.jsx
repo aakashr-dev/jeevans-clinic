@@ -36,9 +36,9 @@ function Doctor() {
 
             <div className="flex items-center gap-3">
 
-              <span className="h-px w-10 bg-[#C08A3E]" />
+              <span className="h-px w-10 bg-[#D49E47]" />
 
-              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#C08A3E]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#D49E47]">
                 About Dr. Santhosh Jacob
               </span>
 
@@ -52,7 +52,7 @@ function Doctor() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 Me.
               </span>
 
@@ -72,7 +72,7 @@ function Doctor() {
 
               <Link
                 to="/appointment"
-                className="rounded-md bg-[#C08A3E] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-white hover:text-[#073B38]"
+                className="rounded-md bg-[#D49E47] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-white hover:text-[#073B38]"
               >
                 Book Appointment
               </Link>
@@ -98,7 +98,7 @@ function Doctor() {
             01
           </span>
 
-          <span className="h-px w-10 bg-[#C08A3E]" />
+          <span className="h-px w-10 bg-[#D49E47]" />
 
           <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-white/50">
             About The Doctor
@@ -124,7 +124,7 @@ function Doctor() {
 
           <div className="relative">
 
-            <div className="absolute -bottom-5 -left-5 h-32 w-32 border-l border-b border-[#C08A3E]" />
+            <div className="absolute -bottom-5 -left-5 h-32 w-32 border-l border-b border-[#D49E47]" />
 
             <div className="relative h-[500px] overflow-hidden rounded-xl md:h-[580px]">
 
@@ -144,9 +144,9 @@ function Doctor() {
 
             <div className="flex items-center gap-3">
 
-              <span className="h-px w-8 bg-[#C08A3E]" />
+              <span className="h-px w-8 bg-[#D49E47]" />
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#D49E47]">
                 My Journey
               </p>
 
@@ -162,13 +162,13 @@ function Doctor() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 orthopedic care.
               </span>
 
             </h2>
 
-            <div className="mt-7 h-px w-12 bg-[#C08A3E]" />
+            <div className="mt-7 h-px w-12 bg-[#D49E47]" />
 
             <p className="mt-7 text-[14px] leading-7 text-gray-600">
               Dr. Santhosh Jacob is dedicated to delivering
@@ -191,7 +191,7 @@ function Doctor() {
                 Dr. Santhosh Jacob
               </p>
 
-              <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em] text-[#C08A3E]">
+              <p className="mt-1 text-[9px] font-bold uppercase tracking-[0.16em] text-[#D49E47]">
                 Orthopedics · Sports Medicine · Spine
               </p>
 
@@ -218,9 +218,9 @@ function Doctor() {
 
             <div className="flex items-center gap-3">
 
-              <span className="h-px w-8 bg-[#C08A3E]" />
+              <span className="h-px w-8 bg-[#D49E47]" />
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#D49E47]">
                 Clinical Philosophy
               </p>
 
@@ -236,7 +236,7 @@ function Doctor() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 understanding.
               </span>
 
@@ -255,7 +255,7 @@ function Doctor() {
 
               <div className="flex gap-4">
 
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#F1EDE5] font-display text-sm text-[#C08A3E]">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#F1EDE5] font-display text-sm text-[#D49E47]">
                   01
                 </span>
 
@@ -274,7 +274,7 @@ function Doctor() {
 
               <div className="flex gap-4">
 
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#F1EDE5] font-display text-sm text-[#C08A3E]">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#F1EDE5] font-display text-sm text-[#D49E47]">
                   02
                 </span>
 
@@ -293,7 +293,7 @@ function Doctor() {
 
               <div className="flex gap-4">
 
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#F1EDE5] font-display text-sm text-[#C08A3E]">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#F1EDE5] font-display text-sm text-[#D49E47]">
                   03
                 </span>
 
@@ -328,7 +328,7 @@ function Doctor() {
 
               <div className="absolute bottom-6 left-6 rounded-lg bg-white/95 px-5 py-4 shadow-xl">
 
-                <p className="text-[9px] font-bold uppercase tracking-[0.17em] text-[#C08A3E]">
+                <p className="text-[9px] font-bold uppercase tracking-[0.17em] text-[#D49E47]">
                   Patient First
                 </p>
 
@@ -371,7 +371,7 @@ function Doctor() {
 
               <div className="absolute bottom-6 left-6">
 
-                <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#C08A3E]">
+                <span className="text-[9px] font-bold uppercase tracking-[0.18em] text-[#D49E47]">
                   03
                 </span>
 
@@ -391,9 +391,9 @@ function Doctor() {
 
             <div className="flex items-center gap-3">
 
-              <span className="h-px w-8 bg-[#C08A3E]" />
+              <span className="h-px w-8 bg-[#D49E47]" />
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#D49E47]">
                 Areas Of Care
               </p>
 
@@ -409,7 +409,7 @@ function Doctor() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 movement.
               </span>
 
@@ -471,9 +471,9 @@ function Doctor() {
 
             <div className="flex items-center gap-3">
 
-              <span className="h-px w-8 bg-[#C08A3E]" />
+              <span className="h-px w-8 bg-[#D49E47]" />
 
-              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#C08A3E]">
+              <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-[#D49E47]">
                 Beyond Treatment
               </p>
 
@@ -489,7 +489,7 @@ function Doctor() {
 
               <br />
 
-              <span className="text-[#C08A3E]">
+              <span className="text-[#D49E47]">
                 treatment.
               </span>
 
@@ -502,7 +502,7 @@ function Doctor() {
               to you.
             </p>
 
-            <div className="mt-9 border-l-2 border-[#C08A3E] pl-5">
+            <div className="mt-9 border-l-2 border-[#D49E47] pl-5">
 
               <p className="font-display text-[24px] leading-tight text-[#103F3A]">
                 “The goal is not simply to treat pain. It is to help
@@ -513,7 +513,7 @@ function Doctor() {
 
             <Link
               to="/appointment"
-              className="mt-9 inline-flex rounded-md bg-[#103F3A] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-[#C08A3E]"
+              className="mt-9 inline-flex rounded-md bg-[#103F3A] px-7 py-4 text-[9px] font-bold uppercase tracking-[0.17em] text-white transition hover:bg-[#D49E47]"
             >
               Start Your Journey
             </Link>
