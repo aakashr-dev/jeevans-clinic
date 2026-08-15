@@ -43,7 +43,7 @@ function HeroSlider() {
   }, []);
 
   return (
-    <section className="relative h-[calc(100vh-80px)] min-h-[580px] max-h-[820px] w-full overflow-hidden bg-teal">
+    <section className="relative h-screen min-h-[640px] max-h-[920px] w-full overflow-hidden bg-teal">
 
       {/* =====================================================
           BACKGROUND SLIDES
@@ -75,26 +75,29 @@ function HeroSlider() {
           HERO CONTENT
       ===================================================== */}
       <div className="relative z-10 mx-auto flex h-full max-w-[1280px] flex-col items-center justify-center px-4 text-center sm:px-6 md:px-10 lg:px-12">
-        <div className="mx-auto flex max-w-4xl flex-col items-center text-center pt-16 sm:pt-20 md:pt-24 pb-8 sm:pb-12">
+        <div className="mx-auto flex max-w-4xl flex-col items-center text-center pt-24 sm:pt-28 md:pt-36 pb-8 sm:pb-12">
 
-          {/* MAIN HEADING */}
-          <h1
-            key={`title-${active}`}
-            className="animate-[heroText_0.8s_ease-out] font-display text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-normal uppercase leading-[1.1] tracking-tight text-white max-w-3xl"
-          >
-            {SLIDES[active].title}
-          </h1>
+          {/* DYNAMIC TEXT CONTAINER WITH FIXED MIN-HEIGHT TO PREVENT BUTTON SHIFT */}
+          <div className="flex min-h-[210px] sm:min-h-[240px] md:min-h-[260px] flex-col items-center justify-center text-center">
+            {/* MAIN HEADING */}
+            <h1
+              key={`title-${active}`}
+              className="animate-[heroText_0.8s_ease-out] font-display text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-normal uppercase leading-[1.1] tracking-tight text-white max-w-3xl"
+            >
+              {SLIDES[active].title}
+            </h1>
 
-          {/* CONCISE DESCRIPTION */}
-          <p
-            key={`description-${active}`}
-            className="mt-6 sm:mt-7 max-w-xl text-sm sm:text-base leading-relaxed text-white/85 animate-[heroText_1s_ease-out] text-center"
-          >
-            {SLIDES[active].description}
-          </p>
+            {/* CONCISE DESCRIPTION */}
+            <p
+              key={`description-${active}`}
+              className="mt-6 sm:mt-7 max-w-xl text-sm sm:text-base leading-relaxed text-white/85 animate-[heroText_1s_ease-out] text-center"
+            >
+              {SLIDES[active].description}
+            </p>
+          </div>
 
-          {/* CTA BUTTONS GROUP MOVED SLIGHTLY DOWNWARDS */}
-          <div className="mt-14 sm:mt-16 md:mt-20 flex w-full max-w-xs sm:max-w-none flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+          {/* STATIC CTA BUTTONS GROUP - EXACT SAME POSITION ON ALL SLIDES */}
+          <div className="mt-8 sm:mt-10 md:mt-12 flex w-full max-w-xs sm:max-w-none flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
             <Link
               to="/appointment"
               className="w-full sm:w-auto inline-flex h-12 min-h-[48px] items-center justify-center rounded-md bg-gold px-8 text-xs font-bold uppercase tracking-[0.14em] text-white shadow-lg transition-all duration-300 hover:bg-white hover:text-teal hover:shadow-xl hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-gold"

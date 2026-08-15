@@ -29,9 +29,9 @@ function PageHero({
 
           <Link
             to="/appointment"
-            className="btn-primary mt-8"
+            className="inline-flex h-12 min-h-[48px] items-center justify-center rounded-md bg-gold px-8 text-xs font-bold uppercase tracking-[0.14em] text-white shadow-lg transition-all duration-300 hover:bg-teal hover:shadow-xl hover:-translate-y-0.5 mt-8"
           >
-            Book a Consultation
+            Book Appointment
           </Link>
 
         </div>

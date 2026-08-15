@@ -110,6 +110,9 @@ function Navbar() {
   const isProgramPage =
     location.pathname.startsWith("/programs/");
 
+  const isHome = location.pathname === "/";
+  const isTransparent = !isScrolled && isHome && !mobileMenuOpen;
+
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
     setMobileAboutOpen(false);
@@ -130,16 +133,12 @@ function Navbar() {
           top-0
           z-50
           w-full
-          border-b
-          border-black/[0.05]
-          bg-white/95
-          backdrop-blur-xl
           transition-all
           duration-500
           ${
-            isScrolled
-              ? "py-2 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
-              : "py-2.5"
+            isTransparent
+              ? "bg-transparent border-b border-white/15 py-4 md:py-5"
+              : "border-b border-black/[0.05] bg-white/95 backdrop-blur-xl py-3 md:py-3.5 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
           }
         `}
       >
@@ -154,30 +153,33 @@ function Navbar() {
             className="group relative z-[60] flex flex-col"
           >
             <span
-              className="
+              className={`
                 font-display
                 text-[22px]
                 font-semibold
                 leading-none
                 tracking-[-0.035em]
-                text-[#10302E]
-                transition
+                transition-colors
+                duration-300
                 md:text-[24px]
-              "
+                ${isTransparent ? "text-white" : "text-[#10302E]"}
+              `}
             >
               Jeevan Physiotherapy
             </span>
 
             <span
-              className="
+              className={`
                 mt-1
                 text-[8.5px]
                 font-semibold
                 uppercase
                 tracking-[0.12em]
-                text-[#173F3D]/60
+                transition-colors
+                duration-300
                 md:text-[9.5px]
-              "
+                ${isTransparent ? "text-white/80" : "text-[#173F3D]/60"}
+              `}
             >
               Orthopedics · Sports Medicine · Spine
             </span>
@@ -201,6 +203,8 @@ function Navbar() {
                 ${
                   location.pathname === "/"
                     ? "text-[#D49E47]"
+                    : isTransparent
+                    ? "text-white hover:text-[#D49E47]"
                     : "text-[#173F3D] hover:text-[#D49E47]"
                 }
               `}
@@ -227,6 +231,8 @@ function Navbar() {
                   ${
                     isAboutPage
                       ? "text-[#D49E47]"
+                      : isTransparent
+                      ? "text-white hover:text-[#D49E47]"
                       : "text-[#173F3D] hover:text-[#D49E47]"
                   }
                 `}
@@ -338,6 +344,8 @@ function Navbar() {
                   ${
                     isConditionPage
                       ? "text-[#D49E47]"
+                      : isTransparent
+                      ? "text-white hover:text-[#D49E47]"
                       : "text-[#173F3D] hover:text-[#D49E47]"
                   }
                 `}
@@ -456,6 +464,8 @@ function Navbar() {
                   ${
                     isProgramPage
                       ? "text-[#D49E47]"
+                      : isTransparent
+                      ? "text-white hover:text-[#D49E47]"
                       : "text-[#173F3D] hover:text-[#D49E47]"
                   }
                 `}
@@ -557,6 +567,8 @@ function Navbar() {
                 ${
                   location.pathname.startsWith("/blog")
                     ? "text-[#D49E47]"
+                    : isTransparent
+                    ? "text-white hover:text-[#D49E47]"
                     : "text-[#173F3D] hover:text-[#D49E47]"
                 }
               `}
@@ -573,13 +585,16 @@ function Navbar() {
 
             <button
               type="button"
-              className="
+              className={`
                 text-[14px]
                 font-medium
-                text-[#173F3D]
-                transition
-                hover:text-[#D49E47]
-              "
+                transition-colors
+                ${
+                  isTransparent
+                    ? "text-white hover:text-[#D49E47]"
+                    : "text-[#173F3D] hover:text-[#D49E47]"
+                }
+              `}
             >
               Login
             </button>
@@ -631,7 +646,9 @@ function Navbar() {
               </svg>
             ) : (
               <svg
-                className="h-7 w-7 text-[#10302E]"
+                className={`h-7 w-7 transition-colors ${
+                  isTransparent ? "text-white" : "text-[#10302E]"
+                }`}
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
