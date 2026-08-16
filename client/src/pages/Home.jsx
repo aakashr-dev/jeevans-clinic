@@ -247,7 +247,7 @@ function Home() {
 
             </div>
 
-            <div className="absolute -bottom-7 right-5 rounded-lg bg-teal px-7 py-6 shadow-xl md:right-8">
+            <div className="absolute -bottom-7 right-5 animate-float rounded-xl bg-teal px-7 py-6 shadow-2xl md:right-8 transition-transform duration-300 hover:scale-105">
 
               <p className="font-display text-4xl text-gold">
                 15+
@@ -324,14 +324,14 @@ function Home() {
             {STATS.map((stat, index) => (
               <div
                 key={stat.label}
-                className={`px-5 py-12 text-center ${
+                className={`group px-5 py-12 text-center transition-all duration-300 hover:scale-105 hover:bg-white rounded-xl ${
                   index !== STATS.length - 1
                     ? "border-r border-gray-200"
                     : ""
                 }`}
               >
 
-                <p className="font-display text-4xl text-teal md:text-5xl">
+                <p className="font-display text-4xl text-teal transition-transform duration-300 group-hover:scale-110 md:text-5xl">
                   {stat.value}
                 </p>
 
@@ -401,7 +401,7 @@ function Home() {
               <Link
                 key={condition.title}
                 to={condition.path}
-                className="group relative overflow-hidden rounded-xl bg-teal"
+                className="group relative overflow-hidden rounded-xl bg-teal card-interactive"
               >
 
                 <div className="aspect-[4/4.5] overflow-hidden">
@@ -409,12 +409,12 @@ function Home() {
                   <img
                     src={condition.image}
                     alt={`${condition.title} treatment`}
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
 
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent transition-opacity duration-300 group-hover:opacity-90" />
 
                 <div className="absolute bottom-0 left-0 right-0 p-7">
 
@@ -422,7 +422,7 @@ function Home() {
                     Orthopedic Care
                   </p>
 
-                  <h3 className="mt-2 font-display text-3xl text-white">
+                  <h3 className="mt-2 font-display text-3xl text-white transition-transform duration-300 group-hover:translate-x-1">
                     {condition.title}
                   </h3>
 
@@ -430,7 +430,7 @@ function Home() {
                     {condition.description}
                   </p>
 
-                  <span className="mt-5 inline-flex text-[10px] font-bold uppercase tracking-[0.15em] text-white">
+                  <span className="mt-5 inline-flex text-[10px] font-bold uppercase tracking-[0.15em] text-white transition-transform duration-300 group-hover:translate-x-2 text-gold">
                     Explore →
                   </span>
 
@@ -495,14 +495,14 @@ function Home() {
               {JOURNEY.map((item) => (
                 <div
                   key={item.number}
-                  className="group relative rounded-xl border border-[rgba(220,230,225,0.14)] bg-[#163F3C] p-8 transition-all duration-500 ease-out hover:-translate-y-1 hover:border-[rgba(212,165,90,0.35)] hover:shadow-[0_12px_30px_rgba(0,0,0,0.15)] lg:p-9"
+                  className="group relative rounded-xl border border-[rgba(220,230,225,0.14)] bg-[#163F3C] p-8 card-interactive lg:p-9 hover:border-gold/50"
                 >
 
-                  <span className="text-xs font-bold tracking-[0.2em] text-gold">
+                  <span className="text-xs font-bold tracking-[0.2em] text-gold transition-transform duration-300 group-hover:scale-110 inline-block">
                     {item.number}
                   </span>
 
-                  <h3 className="mt-7 font-display text-2xl text-white">
+                  <h3 className="mt-7 font-display text-2xl text-white transition-transform duration-300 group-hover:translate-x-1">
                     {item.title}
                   </h3>
 
@@ -549,14 +549,14 @@ function Home() {
             {EXPERTISE.map((item) => (
               <article
                 key={item.number}
-                className="rounded-xl border border-gray-200 bg-white p-7 transition duration-300 hover:-translate-y-1 hover:shadow-lg"
+                className="group rounded-xl border border-gray-200 bg-white p-7 card-interactive hover:border-gold/40"
               >
 
-                <span className="text-xs font-bold tracking-[0.2em] text-gold">
+                <span className="text-xs font-bold tracking-[0.2em] text-gold transition-transform duration-300 group-hover:scale-110 inline-block">
                   {item.number}
                 </span>
 
-                <h3 className="mt-7 font-display text-2xl leading-tight text-teal">
+                <h3 className="mt-7 font-display text-2xl leading-tight text-teal transition-transform duration-300 group-hover:translate-x-1">
                   {item.title}
                 </h3>
 
@@ -619,14 +619,14 @@ function Home() {
               ].map(([number, text]) => (
                 <div
                   key={number}
-                  className="flex items-center gap-4"
+                  className="group flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
                 >
 
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-teal text-xs font-bold text-gold">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-teal text-xs font-bold text-gold transition-transform duration-300 group-hover:scale-110 shadow-md">
                     {number}
                   </span>
 
-                  <span className="text-sm font-medium text-teal">
+                  <span className="text-sm font-medium text-teal font-semibold">
                     {text}
                   </span>
 
