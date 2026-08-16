@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import HeroSlider from "../components/HeroSlider.jsx";
+import ScrollReveal from "../components/ScrollReveal.jsx";
+import AnimatedCard from "../components/AnimatedCard.jsx";
 
 const CONDITIONS = [
   {
@@ -233,7 +235,7 @@ function Home() {
         className="section"
       >
 
-        <div className="container-custom grid items-center gap-16 lg:grid-cols-2">
+        <ScrollReveal className="container-custom grid items-center gap-16 lg:grid-cols-2">
 
           <div className="relative">
 
@@ -306,7 +308,7 @@ function Home() {
 
           </div>
 
-        </div>
+        </ScrollReveal>
 
       </section>
 
@@ -317,7 +319,7 @@ function Home() {
 
       <section className="border-y border-gray-100 bg-[#FAFAF8]">
 
-        <div className="container-custom">
+        <ScrollReveal variant="scale-up" className="container-custom">
 
           <div className="grid grid-cols-2 md:grid-cols-4">
 
@@ -344,7 +346,7 @@ function Home() {
 
           </div>
 
-        </div>
+        </ScrollReveal>
 
       </section>
 
@@ -397,46 +399,51 @@ function Home() {
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 
-            {CONDITIONS.map((condition) => (
-              <Link
+            {CONDITIONS.map((condition, index) => (
+              <AnimatedCard
                 key={condition.title}
-                to={condition.path}
-                className="group relative overflow-hidden rounded-xl bg-teal card-interactive"
+                delay={index * 0.08}
+                className="overflow-hidden rounded-xl bg-teal"
               >
+                <Link
+                  to={condition.path}
+                  className="group relative block overflow-hidden rounded-xl"
+                >
 
-                <div className="aspect-[4/4.5] overflow-hidden">
+                  <div className="aspect-[4/4.5] overflow-hidden">
 
-                  <img
-                    src={condition.image}
-                    alt={`${condition.title} treatment`}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                    <img
+                      src={condition.image}
+                      alt={`${condition.title} treatment`}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
 
-                </div>
+                  </div>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent transition-opacity duration-300 group-hover:opacity-90" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent transition-opacity duration-300 group-hover:opacity-90" />
 
-                <div className="absolute bottom-0 left-0 right-0 p-7">
+                  <div className="absolute bottom-0 left-0 right-0 p-7">
 
-                  <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-gold-light">
-                    Orthopedic Care
-                  </p>
+                    <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-gold-light">
+                      Orthopedic Care
+                    </p>
 
-                  <h3 className="mt-2 font-display text-3xl text-white transition-transform duration-300 group-hover:translate-x-1">
-                    {condition.title}
-                  </h3>
+                    <h3 className="mt-2 font-display text-3xl text-white transition-transform duration-300 group-hover:translate-x-1">
+                      {condition.title}
+                    </h3>
 
-                  <p className="mt-3 max-w-sm text-sm leading-6 text-white/70">
-                    {condition.description}
-                  </p>
+                    <p className="mt-3 max-w-sm text-sm leading-6 text-white/70">
+                      {condition.description}
+                    </p>
 
-                  <span className="mt-5 inline-flex text-[10px] font-bold uppercase tracking-[0.15em] text-white transition-transform duration-300 group-hover:translate-x-2 text-gold">
-                    Explore →
-                  </span>
+                    <span className="mt-5 inline-flex text-[10px] font-bold uppercase tracking-[0.15em] text-gold transition-transform duration-300 group-hover:translate-x-2">
+                      Explore →
+                    </span>
 
-                </div>
+                  </div>
 
-              </Link>
+                </Link>
+              </AnimatedCard>
             ))}
 
           </div>
@@ -492,13 +499,14 @@ function Home() {
 
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:gap-6">
 
-              {JOURNEY.map((item) => (
-                <div
+              {JOURNEY.map((item, index) => (
+                <AnimatedCard
                   key={item.number}
-                  className="group relative rounded-xl border border-[rgba(220,230,225,0.14)] bg-[#163F3C] p-8 card-interactive lg:p-9 hover:border-gold/50"
+                  delay={index * 0.1}
+                  className="group relative rounded-xl border border-[rgba(220,230,225,0.14)] bg-[#163F3C] p-8 lg:p-9"
                 >
 
-                  <span className="text-xs font-bold tracking-[0.2em] text-gold transition-transform duration-300 group-hover:scale-110 inline-block">
+                  <span className="inline-block text-xs font-bold tracking-[0.2em] text-gold transition-transform duration-300 group-hover:scale-110">
                     {item.number}
                   </span>
 
@@ -510,7 +518,7 @@ function Home() {
                     {item.text}
                   </p>
 
-                </div>
+                </AnimatedCard>
               ))}
 
             </div>
@@ -546,13 +554,14 @@ function Home() {
 
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
 
-            {EXPERTISE.map((item) => (
-              <article
+            {EXPERTISE.map((item, index) => (
+              <AnimatedCard
                 key={item.number}
-                className="group rounded-xl border border-gray-200 bg-white p-7 card-interactive hover:border-gold/40"
+                delay={index * 0.08}
+                className="group rounded-xl border border-gray-200 bg-white p-7"
               >
 
-                <span className="text-xs font-bold tracking-[0.2em] text-gold transition-transform duration-300 group-hover:scale-110 inline-block">
+                <span className="inline-block text-xs font-bold tracking-[0.2em] text-gold transition-transform duration-300 group-hover:scale-110">
                   {item.number}
                 </span>
 
@@ -564,7 +573,7 @@ function Home() {
                   {item.text}
                 </p>
 
-              </article>
+              </AnimatedCard>
             ))}
 
           </div>
@@ -580,14 +589,14 @@ function Home() {
 
       <section className="section bg-[#FAFAF8]">
 
-        <div className="container-custom grid items-center gap-14 lg:grid-cols-2">
+        <ScrollReveal className="container-custom grid items-center gap-14 lg:grid-cols-2">
 
           <div className="overflow-hidden rounded-xl">
 
             <img
               src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=85"
               alt="Modern medical centre"
-              className="aspect-[4/3] w-full object-cover"
+              className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
             />
 
           </div>
@@ -622,11 +631,11 @@ function Home() {
                   className="group flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
                 >
 
-                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-teal text-xs font-bold text-gold transition-transform duration-300 group-hover:scale-110 shadow-md">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-teal text-xs font-bold text-gold shadow-md transition-transform duration-300 group-hover:scale-110">
                     {number}
                   </span>
 
-                  <span className="text-sm font-medium text-teal font-semibold">
+                  <span className="text-sm font-semibold text-teal">
                     {text}
                   </span>
 
@@ -644,7 +653,7 @@ function Home() {
 
           </div>
 
-        </div>
+        </ScrollReveal>
 
       </section>
 
@@ -810,7 +819,7 @@ function Home() {
 
       <section className="px-6 pb-20 md:px-10 md:pb-28 lg:px-12">
 
-        <div className="mx-auto max-w-[1400px] overflow-hidden rounded-2xl bg-[#F6F3EE] px-7 py-16 text-center md:px-16 md:py-20">
+        <ScrollReveal variant="scale-up" className="mx-auto max-w-[1400px] overflow-hidden rounded-2xl bg-[#F6F3EE] px-7 py-16 text-center md:px-16 md:py-20">
 
           <p className="eyebrow justify-center">
             Start Your Recovery
@@ -836,7 +845,7 @@ function Home() {
             Book an Appointment
           </Link>
 
-        </div>
+        </ScrollReveal>
 
       </section>
 

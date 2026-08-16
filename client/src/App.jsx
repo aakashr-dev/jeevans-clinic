@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import SmoothScroll from "./components/SmoothScroll.jsx";
 
 import Home from "./pages/Home.jsx";
 
@@ -71,137 +72,139 @@ function NotFound() {
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-teal font-body">
-      <ScrollToTop />
+    <SmoothScroll>
+      <div className="min-h-screen bg-white text-teal font-body">
+        <ScrollToTop />
 
-      {/* NAVBAR */}
+        {/* NAVBAR */}
 
-      <Navbar />
-
-
-      {/* PAGE ROUTES */}
-
-      <main>
-        <Routes>
-
-          {/* ================================================
-              HOME
-          ================================================ */}
-
-          <Route
-            path="/"
-            element={<Home />}
-          />
+        <Navbar />
 
 
-          {/* ================================================
-              ABOUT
-          ================================================ */}
+        {/* PAGE ROUTES */}
 
-          <Route
-            path="/about/doctor"
-            element={<Doctor />}
-          />
+        <main>
+          <Routes>
 
-          <Route
-            path="/about/team"
-            element={<Team />}
-          />
+            {/* ================================================
+                HOME
+            ================================================ */}
 
-
-          {/* ================================================
-              CONDITIONS
-          ================================================ */}
-
-          <Route
-            path="/conditions/neck"
-            element={<Neck />}
-          />
-
-          <Route
-            path="/conditions/knee"
-            element={<Knee />}
-          />
-
-          <Route
-            path="/conditions/shoulder"
-            element={<Shoulder />}
-          />
-
-          <Route
-            path="/conditions/spine"
-            element={<Spine />}
-          />
-
-          <Route
-            path="/conditions/hip"
-            element={<Hip />}
-          />
-
-          <Route
-            path="/conditions/ankle"
-            element={<Ankle />}
-          />
-
-          <Route
-            path="/conditions/foot"
-            element={<Foot />}
-          />
+            <Route
+              path="/"
+              element={<Home />}
+            />
 
 
-          {/* ================================================
-              PROGRAMS
-          ================================================ */}
+            {/* ================================================
+                ABOUT
+            ================================================ */}
 
-          <Route
-            path="/programs/centers"
-            element={<Centers />}
-          />
+            <Route
+              path="/about/doctor"
+              element={<Doctor />}
+            />
 
-
-          {/* ================================================
-              BLOG
-          ================================================ */}
-
-          <Route
-            path="/blog"
-            element={<Blog />}
-          />
-
-          <Route
-            path="/blog/:slug"
-            element={<BlogDetail />}
-          />
+            <Route
+              path="/about/team"
+              element={<Team />}
+            />
 
 
-          {/* ================================================
-              APPOINTMENT
-          ================================================ */}
+            {/* ================================================
+                CONDITIONS
+            ================================================ */}
 
-          <Route
-            path="/appointment"
-            element={<Appointment />}
-          />
+            <Route
+              path="/conditions/neck"
+              element={<Neck />}
+            />
+
+            <Route
+              path="/conditions/knee"
+              element={<Knee />}
+            />
+
+            <Route
+              path="/conditions/shoulder"
+              element={<Shoulder />}
+            />
+
+            <Route
+              path="/conditions/spine"
+              element={<Spine />}
+            />
+
+            <Route
+              path="/conditions/hip"
+              element={<Hip />}
+            />
+
+            <Route
+              path="/conditions/ankle"
+              element={<Ankle />}
+            />
+
+            <Route
+              path="/conditions/foot"
+              element={<Foot />}
+            />
 
 
-          {/* ================================================
-              404
-          ================================================ */}
+            {/* ================================================
+                PROGRAMS
+            ================================================ */}
 
-          <Route
-            path="*"
-            element={<NotFound />}
-          />
-
-        </Routes>
-      </main>
+            <Route
+              path="/programs/centers"
+              element={<Centers />}
+            />
 
 
-      {/* FOOTER */}
+            {/* ================================================
+                BLOG
+            ================================================ */}
 
-      <Footer />
+            <Route
+              path="/blog"
+              element={<Blog />}
+            />
 
-    </div>
+            <Route
+              path="/blog/:slug"
+              element={<BlogDetail />}
+            />
+
+
+            {/* ================================================
+                APPOINTMENT
+            ================================================ */}
+
+            <Route
+              path="/appointment"
+              element={<Appointment />}
+            />
+
+
+            {/* ================================================
+                404
+            ================================================ */}
+
+            <Route
+              path="*"
+              element={<NotFound />}
+            />
+
+          </Routes>
+        </main>
+
+
+        {/* FOOTER */}
+
+        <Footer />
+
+      </div>
+    </SmoothScroll>
   );
 }
 
