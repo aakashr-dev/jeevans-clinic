@@ -46,7 +46,7 @@ function Doctor() {
 
             {/* TITLE */}
 
-            <h1 className="mt-7 font-display text-[65px] leading-[0.88] tracking-[-0.045em] text-white sm:text-[78px] md:text-[95px] lg:text-[110px]">
+            <h1 className="mt-7 font-display text-4xl xs:text-5xl sm:text-[78px] md:text-[95px] lg:text-[110px] leading-[0.88] tracking-[-0.045em] text-white">
 
               About
 
@@ -124,7 +124,7 @@ function Doctor() {
 
           <div className="relative">
 
-            <div className="absolute -bottom-5 -left-5 h-32 w-32 border-l border-b border-[#D49E47]" />
+            <div className="absolute -bottom-5 -left-5 h-32 w-32 border-l border-b border-[#D49E47] hidden sm:block" />
 
             <div className="relative h-[500px] overflow-hidden rounded-xl md:h-[580px]">
 

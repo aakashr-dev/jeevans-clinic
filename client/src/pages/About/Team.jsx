@@ -95,7 +95,7 @@ function Team() {
 
             </div>
 
-            <h1 className="mt-7 font-display text-[62px] leading-[0.88] tracking-[-0.045em] text-white sm:text-[76px] md:text-[92px] lg:text-[105px]">
+            <h1 className="mt-7 font-display text-4xl xs:text-5xl sm:text-[76px] md:text-[92px] lg:text-[105px] leading-[0.88] tracking-[-0.045em] text-white">
 
               Expert care,
 

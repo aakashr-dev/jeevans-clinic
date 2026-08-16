@@ -118,13 +118,14 @@ function Centers() {
               className="
                 mt-7
                 font-display
-                text-[70px]
-                leading-[0.86]
-                tracking-[-0.045em]
-                text-white
+                text-4xl
+                xs:text-5xl
                 sm:text-[82px]
                 md:text-[100px]
                 lg:text-[112px]
+                leading-[0.86]
+                tracking-[-0.045em]
+                text-white
               "
             >
               Care,

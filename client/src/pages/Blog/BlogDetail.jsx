@@ -163,7 +163,7 @@ function BlogDetail() {
 
       <article className="section">
 
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-3xl px-6">
 
           {blog.sections.map((section, index) => (
             <section

@@ -313,13 +313,14 @@ function Knee() {
                 className="
                   mt-7
                   font-display
-                  text-[74px]
-                  leading-[0.82]
-                  tracking-[-0.045em]
-                  text-white
+                  text-4xl
+                  xs:text-5xl
                   sm:text-[84px]
                   md:text-[100px]
                   lg:text-[112px]
+                  leading-[0.82]
+                  tracking-[-0.045em]
+                  text-white
                 "
               >
                 Knee

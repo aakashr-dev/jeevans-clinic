@@ -90,12 +90,24 @@ function Navbar() {
   }, []);
 
   // =======================================================
-  // CLOSE MOBILE MENU WHEN ROUTE CHANGES
+  // CLOSE MOBILE MENU WHEN ROUTE CHANGES & LOCK BODY SCROLL
   // =======================================================
 
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location.pathname]);
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
 
   // =======================================================
   // HELPERS
@@ -126,23 +138,22 @@ function Navbar() {
 
   return (
     <>
-      <nav
-        className={`
-          fixed
-          left-0
-          top-0
-          z-50
-          w-full
-          transition-all
-          duration-500
-          ${
-            isTransparent
-              ? "bg-transparent border-b border-transparent py-4 md:py-5"
-              : "border-b border-black/[0.05] bg-white/95 backdrop-blur-xl py-3 md:py-3.5 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
-          }
-        `}
-      >
-        <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 md:px-8 lg:px-12">
+      <nav className="fixed left-0 top-0 z-50 w-full">
+        <div
+          className={`
+            relative
+            z-[60]
+            w-full
+            transition-all
+            duration-500
+            ${
+              isTransparent
+                ? "bg-transparent border-b border-transparent py-4 md:py-5"
+                : "border-b border-black/[0.05] bg-white/95 backdrop-blur-xl py-3 md:py-3.5 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
+            }
+          `}
+        >
+          <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 md:px-8 lg:px-12">
 
           {/* =================================================
               LOGO
@@ -586,8 +597,13 @@ function Navbar() {
             <button
               type="button"
               className={`
+                inline-flex
+                items-center
+                justify-center
+                py-2.5
                 text-[14px]
                 font-medium
+                leading-none
                 transition-colors
                 ${
                   isTransparent
@@ -625,7 +641,7 @@ function Navbar() {
 
           <button
             type="button"
-            className="relative z-[60] p-2 lg:hidden"
+            className="relative z-[60] flex min-h-[44px] min-w-[44px] items-center justify-center p-2 lg:hidden"
             onClick={() =>
               setMobileMenuOpen((prev) => !prev)
             }
@@ -662,6 +678,7 @@ function Navbar() {
             )}
           </button>
         </div>
+      </div>
 
         {/* ===================================================
             MOBILE MENU
@@ -672,13 +689,16 @@ function Navbar() {
             fixed
             inset-0
             z-50
+            h-screen
+            h-dvh
+            w-screen
             bg-white
             transition-all
             duration-500
             lg:hidden
             ${
               mobileMenuOpen
-                ? "translate-y-0 opacity-100"
+                ? "translate-y-0 opacity-100 pointer-events-auto"
                 : "pointer-events-none -translate-y-full opacity-0"
             }
           `}

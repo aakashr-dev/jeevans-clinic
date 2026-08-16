@@ -326,10 +326,10 @@ function Home() {
             {STATS.map((stat, index) => (
               <div
                 key={stat.label}
-                className={`group px-5 py-12 text-center transition-all duration-300 hover:scale-105 hover:bg-white rounded-xl ${
-                  index !== STATS.length - 1
-                    ? "border-r border-gray-200"
-                    : ""
+                className={`group px-5 py-12 text-center transition-all duration-300 hover:scale-105 hover:bg-white rounded-xl border-gray-200 ${
+                  index % 2 === 0 ? "border-r md:border-r" : "md:border-r"
+                } ${index < 2 ? "border-b md:border-b-0" : ""} ${
+                  index === STATS.length - 1 ? "md:border-r-0" : ""
                 }`}
               >
 

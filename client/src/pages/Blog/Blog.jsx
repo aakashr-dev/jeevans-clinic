@@ -116,7 +116,7 @@ function Blog() {
 
               </div>
 
-              <h1 className="font-display text-[56px] font-medium leading-[0.9] tracking-[-0.045em] text-[#103F3A] sm:text-[66px] md:text-[78px] lg:text-[88px]">
+              <h1 className="font-display text-4xl xs:text-5xl font-medium leading-[0.9] tracking-[-0.045em] text-[#103F3A] sm:text-[66px] md:text-[78px] lg:text-[88px]">
 
                 Knowledge that
 

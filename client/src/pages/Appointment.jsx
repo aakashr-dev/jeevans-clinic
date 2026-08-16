@@ -173,7 +173,7 @@ function Appointment() {
 
           {/* FORM */}
 
-          <div className="rounded-[30px] border border-gray-200 bg-white p-6 shadow-sm md:p-9">
+          <div className="rounded-[30px] border border-gray-200 bg-white p-5 sm:p-7 md:p-9 shadow-sm">
 
             <form
               onSubmit={handleSubmit}
